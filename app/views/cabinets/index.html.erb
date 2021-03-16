@@ -1,1 +1,18 @@
-index.html.erb
+<div>
+  <%= week_calendar(number_of_weeks: 1) do |date| %>
+    <%= date %> <!-- Enlever cette ligne -->
+    <% hour = 8 %>
+    <% 10.times do %>
+      <div>
+        <p><%= hour %>h - <%= hour + 1 %>h</p>
+        <!-- <%= simple_form_for { @reservation, @cabinet } %>
+            <%= f.input :start_time %>
+        <% end %>
+          simple_form @reservation & @cabinet
+          f.input :start_time
+          f.input :end_time-->
+      </div>
+      <% hour += 1 %>
+    <% end %>
+  <% end %>
+</div>

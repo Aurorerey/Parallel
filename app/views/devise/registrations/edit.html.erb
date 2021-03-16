@@ -9,30 +9,36 @@
     <% if devise_mapping.confirmable? && resource.pending_reconfirmation? %>
       <p>Currently waiting confirmation for: <%= resource.unconfirmed_email %></p>
     <% end %>
+    <div class="form-row">
+      <div class="form-group col-md-6">
     <%= f.input :nom,
                 required: false,
                 autofocus: true,
-                input_html: { autocomplete: "email" }%>
+                input_html: { autocomplete: "family-name" }%>`
+      </div>
+      <div class="form-group col-md-6">
     <%= f.input :prenom,
                 required: false,
                 autofocus: true,
-                input_html: { autocomplete: "email" }%>
+                input_html: { autocomplete: "given-name" }%>
+      </div>
+    </div>
     <%= f.input :adresse,
                 required: false,
                 autofocus: true,
-                input_html: { autocomplete: "email" }%>
+                input_html: { autocomplete: "street-address" }%>
     <%= f.input :city,
                 required: false,
                 autofocus: true,
-                input_html: { autocomplete: "email" }%>
+                input_html: { autocomplete: "city" }%>
     <%= f.input :code_postal,
                 required: false,
                 autofocus: true,
-                input_html: { autocomplete: "email" }%>
+                input_html: { autocomplete: "postal-code" }%>
     <%= f.input :telephone,
                 required: false,
                 autofocus: true,
-                input_html: { autocomplete: "email" }%>
+                input_html: { autocomplete: "tel-national" }%>
     <%= f.input :password,
                 hint: "leave it blank if you don't want to change it",
                 required: false,
@@ -47,7 +53,7 @@
     <%= f.input :birthday,
                 required: false,
                 autofocus: true,
-                input_html: { autocomplete: "email" }%>
+                input_html: { autocomplete: "birthday" }%>
   </div>
 
   <div class="form-actions">
