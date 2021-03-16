@@ -64,3 +64,6 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
 # validation e-mail
 gem 'email_validator'
+
+# Gem calendar
+gem "simple_calendar", "~> 2.4"
