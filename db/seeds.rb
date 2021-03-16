@@ -5,3 +5,17 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+
+
+require "open-uri"
+
+Cabinet.destroy_all
+User.destroy_all
+
+User.create!(nom:"Irlande", prenom:"Chloé", email:"chloeirlande@gmail.com", password:"chloechloe",city: "Marseille", telephone: 0621444444, adresse: "32 rue de la morue")
+
+
+users = User.all
+
+
+cabinet1 = Cabinet.create!(name: "L'intrépide", description: "Un cabinet sympa", user: users.sample, cp_cabinet: 13003)
