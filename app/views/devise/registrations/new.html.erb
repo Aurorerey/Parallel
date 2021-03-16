@@ -4,10 +4,45 @@
   <%= f.error_notification %>
 
   <div class="form-inputs">
-    <%= f.input :email,
+    <%= f.input :nom,
+                required: true,
+                length: { minimum: 2 },
+                autofocus: true,
+                input_html: { autocomplete: "email" }%>
+    <%= f.input :prenom,
+                required: true,
+                length: { minimum: 2 },
+                autofocus: true,
+                input_html: { autocomplete: "email" }%>
+    <%= f.input :adresse,
                 required: true,
                 autofocus: true,
                 input_html: { autocomplete: "email" }%>
+    <%= f.input :city,
+                required: true,
+                autofocus: true,
+                input_html: { autocomplete: "email" }%>
+    <%= f.input :code_postal,
+                required: true,
+                numericality: { only_integer: true },
+                autofocus: true,
+                input_html: { autocomplete: "email" }%>
+    <%= f.input :telephone,
+                required: true,
+                length: { is: 10 },
+                numericality: { only_integer: true },
+                autofocus: true,
+                input_html: { autocomplete: "email" }%>
+    <%= f.input :email,
+                required: true,
+                uniqueness: true,
+                email: true,
+                confirmation: true,
+                autofocus: true,
+                input_html: { autocomplete: "email" }%>
+    <%= f.input :email_confirmation,
+                required: true,
+                input_html: { autocomplete: "email" } %>
     <%= f.input :password,
                 required: true,
                 hint: ("#{@minimum_password_length} characters minimum" if @minimum_password_length),
@@ -15,6 +50,10 @@
     <%= f.input :password_confirmation,
                 required: true,
                 input_html: { autocomplete: "new-password" } %>
+    <%= f.input :birthday,
+                required: false,
+                autofocus: true,
+                input_html: { autocomplete: "email" }%>
   </div>
 
   <div class="form-actions">
