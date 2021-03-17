@@ -1,5 +1,6 @@
 class Cabinet < ApplicationRecord
   belongs_to :user
+  has_one_attached :photo
   # Doit posseder un compte
   #has_one :account
   #validates :account, presence: true
