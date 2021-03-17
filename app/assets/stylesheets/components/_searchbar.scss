@@ -10,6 +10,7 @@
         width: 430px;
         margin: 0 auto;
         font-family: 'Raleway', sans-serif;
+        padding-bottom: 50px;
     }
     
     &__title {
@@ -24,21 +25,3 @@
     display: flex;
     flex-direction: row;
 }
-
-
-.credits {
-    &__container {
-        margin-top: 24px;
-    }
-    
-    &__text {
-        text-align: center;
-    }
-
-    &__secte {
-        text-align: center;
-        font-size: 13px;
-        line-height: 18px;
-    }
-}
-
