@@ -1,0 +1,23 @@
+.praticiens-container {
+  display: flex;
+}
+.praticien-card {
+  overflow: hidden;
+  height: 175px;
+  width: 350px;
+  background: orange;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin: 50px;
+}
+
+.praticien-infos {
+  padding-left: 20px;
+}
+
+.praticien-infos h2 {
+  font-size: 25px;
+}
+
+

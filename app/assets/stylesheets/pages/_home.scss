@@ -1,16 +1,12 @@
-.credits {
-    &__container {
-        margin-top: 24px;
-        padding-bottom: 30px;
-    }
-    
-    &__text {
-        text-align: center;
-    }
+html {
+    height: 100%;
+  }
 
-    &__secte {
-        text-align: center;
-        font-size: 13px;
-        line-height: 18px;
-    }
-}
+body{
+    min-height: 100%;
+    margin: 0;
+    padding: 0;
+    background-size: cover;
+    color: white;
+  }
+
