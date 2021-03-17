@@ -1,10 +1,10 @@
 .boutons-home {
   width: 80vw;
   margin: 0 auto;
-  min-height: 100vh;
+  display: flex;
+  justify-content: flex-end;
 }
-.btn {
-  flex: 1 1 auto;
+.btn-home {
   margin: 10px;
   padding: 50px;
   text-align: center;
@@ -21,7 +21,9 @@
 
 /* <- Magic Stuff Start */
 
-.btn:hover {
+.btn-home:hover {
+  color: white;
+  text-decoration: none;
   background-position: right center; /* change the direction of the change here */
 }
 
