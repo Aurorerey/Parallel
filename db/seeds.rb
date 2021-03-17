@@ -70,12 +70,12 @@ email: "jeanmeditation@gmail.com", cp_cabinet: 13008, adresse_cabinet: "23 rue d
 cabinet1.photo.attach(io: file, filename: 'prof4', content_type: 'image/png')
 
 file1 = URI.open('https://res.cloudinary.com/cloudpandora/image/upload/v1615975021/Photos%20Pros/prof4.png')
-cabinet2 = Cabinet.create!(name: "Beatrice", descriptin: "Un cabinet sympa", user: users.sample,
+cabinet2 = Cabinet.create!(name: "Beatrice", description: "Un cabinet sympa", user: users.sample,
 email: "jeanmeditation@gmail.com", cp_cabinet: 13008, adresse_cabinet: "23 rue des champs")
 cabinet2.photo.attach(io: file1, filename: 'prof4', content_type: 'image/png')
 
 file2 = URI.open('https://res.cloudinary.com/cloudpandora/image/upload/v1615975021/Photos%20Pros/prof4.png')
-cabinet3 = Cabinet.create!(name: "", description: "Un cabinet sympa", user: users.sample,
+cabinet3 = Cabinet.create!(name: "Jean-Claude", description: "Un cabinet sympa", user: users.sample,
 email: "jeanmeditation@gmail.com", cp_cabinet: 13008, adresse_cabinet: "23 rue des champs")
 cabinet3.photo.attach(io: file2, filename: 'prof4', content_type: 'image/png')
 
