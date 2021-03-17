@@ -15,10 +15,11 @@
 
        <p class="notice"><%= notice %></p>
        <p class="alert"><%= alert %></p>
-    <%= yield %>
+
     <%= render 'shared/navbar' %>
-    <%= render 'shared/flashes' %>
-    <%= render 'shared/footer' %>
     <%= render 'shared/searchbar' %>
+    <%= render 'shared/flashes' %>
+      <%= yield %>
+    <%= render 'shared/footer' %>
   </body>
 </html>

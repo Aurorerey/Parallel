@@ -11,11 +11,11 @@
   flex-grow: 0;
 }
 
-.navbar-lewagon .navbar-brand img {
-  width: 40px;
-}
-
 .navbar-lewagon .nav-item {
   display: flex;
   flex-direction: row;
+}
+
+.navbar a {
+  color: rgba(0, 0, 0, 0.5);
 }
