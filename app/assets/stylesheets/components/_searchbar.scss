@@ -3,15 +3,12 @@
 
 /* Base styling */
 
-body {
-    width: 430px;
-    margin: 0 auto;
-    font-family: 'Raleway', sans-serif;
-}
-
 .search {
     &__container {
         padding-top: 64px;
+        width: 430px;
+        margin: 0 auto;
+        font-family: 'Raleway', sans-serif;
     }
     
     &__title {
