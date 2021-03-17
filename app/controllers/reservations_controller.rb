@@ -14,7 +14,7 @@ class ReservationsController < ApplicationController
     @cabinet = Cabinet.find(params[:cabinet_id])
     @reservation.cabinet = @cabinet
     @reservation.user = current_user
-    if @reservation.save
+    if @reservation.save!
       redirect_to cabinet_path(@cabinet), notice: "Your reservation is confirm"
     else
       render :new
@@ -25,5 +25,11 @@ class ReservationsController < ApplicationController
     @reservation = Reservation.find(params[:id])
     @reservation.destroy
     redirect_to cabinet_path, notice: 'Cabinet was successfully destroyed.'
+  end
+
+  private
+
+  def reservation_params
+    params.require(:reservation).permit(:start_time, :end_time)
   end
 end
