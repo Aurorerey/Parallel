@@ -1,0 +1,44 @@
+
+// Specific CSS for your home-page
+@import url('https://fonts.googleapis.com/css?family=Raleway:400,700,900');
+
+/* Base styling */
+
+.search {
+    &__container {
+        padding-top: 64px;
+        width: 430px;
+        margin: 0 auto;
+        font-family: 'Raleway', sans-serif;
+    }
+    
+    &__title {
+        font-size: 22px;
+        font-weight: 900;
+        text-align: center;
+        color: #000000;
+    }       
+}  
+
+.searchbar {
+    display: flex;
+    flex-direction: row;
+}
+
+
+.credits {
+    &__container {
+        margin-top: 24px;
+    }
+    
+    &__text {
+        text-align: center;
+    }
+
+    &__secte {
+        text-align: center;
+        font-size: 13px;
+        line-height: 18px;
+    }
+}
+

@@ -1,18 +1,20 @@
-<div>
-  <%= week_calendar(number_of_weeks: 1) do |date| %>
-    <%= date %> <!-- Enlever cette ligne -->
-    <% hour = 8 %>
-    <% 10.times do %>
-      <div>
-        <p><%= hour %>h - <%= hour + 1 %>h</p>
-        <!-- <%= simple_form_for { @reservation, @cabinet } %>
-            <%= f.input :start_time %>
-        <% end %>
-          simple_form @reservation & @cabinet
-          f.input :start_time
-          f.input :end_time-->
-      </div>
-      <% hour += 1 %>
-    <% end %>
-  <% end %>
+<div class="praticiens-container">
+  <div class="praticien-card">
+    <img class="avatar-bordered" alt="avatar-bordered" src="https://kitt.lewagon.com/placeholder/users/sarahlafer" />
+    <div class="praticien-infos">
+      <h2>Trou du Q name</h2>
+      <p>Hypnose <strong>Ericksonienne</strong></p>
+      <p>J'adore la vie </p>
+      <%= link_to "Prendre RDV", "/ruby-book" %>
+    </div>
+  </div>
+  <div class="praticien-card">
+    <img class="avatar-bordered" alt="avatar-bordered" src="https://kitt.lewagon.com/placeholder/users/sarahlafer" />
+    <div class="praticien-infos">
+      <h2>Trou du Q name</h2>
+      <p>Hypnose <strong>Ericksonienne</strong></p>
+      <p>J'adore la vie </p>
+      <%= link_to "Prendre RDV", "/ruby-book" %>
+    </div>
+  </div>
 </div>

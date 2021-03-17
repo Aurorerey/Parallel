@@ -11,11 +11,18 @@
   flex-grow: 0;
 }
 
-.navbar-lewagon .navbar-brand img {
-  width: 40px;
-}
-
 .navbar-lewagon .nav-item {
   display: flex;
   flex-direction: row;
+}
+
+.nav-parallel {
+  color: rgba(0, 0, 0, 0.5);
+  font-size: 35px;
+  padding-left: 10px;
+}
+
+.nav-parallel:hover {
+  text-decoration: none;
+  color: black;
 }

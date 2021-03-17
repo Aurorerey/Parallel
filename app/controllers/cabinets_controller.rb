@@ -18,6 +18,7 @@ class CabinetsController < ApplicationController
 
   def show
     @cabinet = Cabinet.find(params[:id])
+    @reservation = Reservation.new
   end
 
   def destroy
