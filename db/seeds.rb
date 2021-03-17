@@ -13,8 +13,8 @@ Cabinet.destroy_all
 User.destroy_all
 Category.destroy_all
 
+Category.create!(name:"energie")
 Category.create!(name:"corps")
-Category.create!(name:"esprit")
 
 User.create!(nom:"Irlande", prenom:"Chloé", email:"chloeirlande@gmail.com", email_confirmation:"chloeirlande@gmail.com",
 password:"chloechloe",city: "Marseille", adresse: "32 rue de la morue", code_postal: 13003, telephone: 0111223344)
