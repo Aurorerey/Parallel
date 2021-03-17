@@ -1,8 +1,11 @@
+<div class="calendcontainer">
 <div class="simple-calendar">
   <div class="calendar-heading">
-    <%= link_to t('simple_calendar.previous', default: 'Previous'), calendar.url_for_previous_view %>
-    <span class="calendar-title"><%= t('date.month_names')[start_date.month] %> <%= start_date.year %></span>
-    <%= link_to t('simple_calendar.next', default: 'Next'), calendar.url_for_next_view %>
+    <div class="btn-group" role="group" aria-label="Basic example">
+      <button type="button" class="btn btn-light page-link"><%= link_to t('simple_calendar.previous', default: 'Previous'), calendar.url_for_previous_view %></button>
+      <button type="button" class="btn btn-light"><span class="calendar-title"><%= t('date.month_names')[start_date.month] %> <%= start_date.year %></span></button>
+      <button type="button" class="btn btn-light page-link"><%= link_to t('simple_calendar.next', default: 'Next'), calendar.url_for_next_view %></button>
+    </div>
   </div>
 
   <table class="table table-striped">
@@ -30,4 +33,5 @@
       <% end %>
     </tbody>
   </table>
+</div>
 </div>
