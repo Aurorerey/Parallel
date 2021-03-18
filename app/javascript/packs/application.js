@@ -30,5 +30,16 @@ import "bootstrap";
 
 document.addEventListener('turbolinks:load', () => {
   // Call your functions here, e.g:
+  // function AnimateTransition(){
+  //   container: container,
+  //   blockIn: popup,
+  //   animation: 'cover-in',
+  //   onTransitionStart: function (blockIn, blockOut, container, event) {
+
+  //   },
+  //   onTransitionEnd: function (blockIn, blockOut, container, event) {
+
+  //   }
+  // };
   // initSelect2();
 });

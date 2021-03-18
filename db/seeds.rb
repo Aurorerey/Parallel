@@ -9,6 +9,7 @@
 
 require "open-uri"
 
+Reservation.destroy_all
 Cabinet.destroy_all
 User.destroy_all
 Activity.destroy_all
