@@ -1,25 +1,21 @@
 body.home {
 background-image: url(https://res.cloudinary.com/cloudpandora/image/upload/v1616004050/Photos%20Pros/Background-home_kavy6n.jpg);
-background-size: cover;
-height: 100%;
+
 }
 
 body.activities {
-  background-image: url(https://res.cloudinary.com/cloudpandora/image/upload/v1616012887/Photos%20Pros/Background-activities_svz2gf.jpg);
-background-size: cover;
-height: 100%;
+background-image: url(https://res.cloudinary.com/cloudpandora/image/upload/v1616012887/Photos%20Pros/Background-activities_svz2gf.jpg);
 }
 
 body.health {
 background-image: url(https://res.cloudinary.com/cloudpandora/image/upload/v1616069316/Photos%20Pros/Background-cabinet_ojsdex.jpg);
-background-size: cover;
-height: 100%;
 }
 
 body{
-    min-height: 100%;
     margin: 0;
     padding: 0;
     color: white;
+    background-size: cover;
+    min-height: 100vh;
   }
 
