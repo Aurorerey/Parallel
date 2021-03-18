@@ -1,19 +1,13 @@
 
 
-
-
-<!-- WARNING : CODE DU CALENDRIER CI-DESSOUS / DON'T TOUCH / ONLY FOR CSS CLASS -->
-
+<!-- WARNING WARNING WARNING DON'T TOUCH THE CODE-->
+<!-- Sous ce commentaire se trouve l'ensemble du code calendrier avec le pop up confirmation (copier le code avec les commentaires) -->
 <div>
   <%= calendar(number_of_days: 7) do |date| %>
     <%= date %>
     <% hour = 8 %>
     <% 10.times do %>
-    <% if Reservation.where(start_time: date + hour.hours).exists? %>
-        <button type="button" class="btn calendarbutton2"><p>Réservé</p></button>
-        <% else %>
         <button type="button" class="btn btn-light calendarbutton" data-toggle="modal" data-target="#exampleModal-<%= date %>-<%= hour %>"><p><%= hour %>h - <%= hour + 1 %>h</p></button>
-        <% end %>
         <div class="modal fade" id="exampleModal-<%= date %>-<%= hour %>" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
           <div class="modal-dialog" role="document">
             <div class="modal-content">
@@ -33,7 +27,7 @@
                 <%= simple_form_for [ @cabinet, @reservation ] do |f| %>
                   <%= f.input :start_time, as: :hidden, input_html: { value: date.to_datetime + hour.hours }%>
                   <%= f.input :end_time, as: :hidden, input_html: { value: date.to_datetime + (hour + 1).hours } %>
-                  <%= f.submit 'Confirmer', class: "btnSubmit" %>
+                  <%= f.submit 'Confirmer' %>
                 <% end %>
               </div>
             </div>
@@ -43,5 +37,5 @@
     <% end %>
   <% end %>
 </div>
+<!-- Fin du code du calendrier (copier le code avec les commentaires) -->
 
-<!-- WARNING : CODE DU CALENDRIER CI-DESSUS / DON'T TOUCH / ONLY FOR CSS CLASS -->
