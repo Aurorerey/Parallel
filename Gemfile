@@ -69,3 +69,6 @@ gem 'email_validator'
 
 # Gem calendar
 gem "simple_calendar", "~> 2.4"
+
+# Gem map
+gem 'geocoder'

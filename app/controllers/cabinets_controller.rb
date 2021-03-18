@@ -1,6 +1,13 @@
 class CabinetsController < ApplicationController
   def index
     @cabinets = Cabinet.all
+
+    @markers = @cabinets.geocoded.map do |cabinet|
+      {
+        lat: cabinet.latitude,
+        lng: cabinet.longitude
+      }
+    end
   end
 
   def new
