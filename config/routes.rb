@@ -10,5 +10,5 @@ Rails.application.routes.draw do
   resources :cabinets do
     resources :reservations, only: [:new, :create, :destroy]
   end
-  get '/pro', to: 'pages#home'
+  get '/pro', to: 'pages#pro'
 end
