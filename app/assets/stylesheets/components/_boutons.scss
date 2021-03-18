@@ -53,25 +53,25 @@
   justify-content: center;
   position: absolute;
   &.btn-1 {
-
-    right: 200px;
+    z-index: 1;
+    right: 150px;
     bottom: 100px;
   }
     &.btn-2 {
-    right: 300px;
-    bottom:200px
+    right: 200px;
+    bottom:200px;
 
   }
     &.btn-3 {
-    right: 400px;
-    bottom: 110px;
+    right: 350px;
+    bottom: 150px;
   }
     &.btn-5 {
     right: 250px;
     bottom: 10px;
   }
      &.btn-4 {
-    right: 400px;
+    right: 350px;
     bottom: 30px;
   }
 
