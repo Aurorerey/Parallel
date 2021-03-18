@@ -30,5 +30,23 @@ import "bootstrap";
 
 document.addEventListener('turbolinks:load', () => {
   // Call your functions here, e.g:
+  // function AnimateTransition(){
+  //   container: container,
+  //   blockIn: popup,
+  //   animation: 'cover-in',
+  //   onTransitionStart: function (blockIn, blockOut, container, event) {
+
+  //   },
+  //   onTransitionEnd: function (blockIn, blockOut, container, event) {
+
+  //   }
+  // };
+
+  const submitBouton = document.querySelector(".btnSubmit");
+  const calendarbutton = document.querySelector(".calendarbutton");
+
+  submitBouton.addEventListener("click", event => {
+    calendarbutton.classList.add("bookedbutton");
+  })
   // initSelect2();
 });
