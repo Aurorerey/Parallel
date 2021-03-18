@@ -10,10 +10,10 @@
         <li class="nav-item">
           <%= link_to "Messages", "#", class: "nav-link" %>
         </li>
-      
+
       <% else %>
         <li class="nav-item">
-          <%= link_to "Vous êtes practicien ?", '/pro', class: "nav-link" %>
+          <%= link_to "Vous êtes practicien ?", new_cabinet_path, class: "nav-link" %>
           <%= link_to "Login", new_user_session_path, class: "nav-link" %>
           <%= link_to "Sign in", new_user_registration_path, class: "nav-link" %>
         </li>
