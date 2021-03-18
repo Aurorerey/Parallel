@@ -41,12 +41,5 @@ document.addEventListener('turbolinks:load', () => {
 
   //   }
   // };
-
-  const submitBouton = document.querySelector(".btnSubmit");
-  const calendarbutton = document.querySelector(".calendarbutton");
-
-  submitBouton.addEventListener("click", event => {
-    calendarbutton.classList.add("bookedbutton");
-  })
   // initSelect2();
 });
