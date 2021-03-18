@@ -1,20 +1,19 @@
 <%= render 'shared/searchbar' %>
 
-<body class="health">
-  <div class="big-praticien-container">
-    <div class="praticiens-container">
-      <% @cabinets.each do |cabinet| %>
-      <div class="praticien-card">
-        <div class="p-avatar">
-          <%= cl_image_tag cabinet.photo.key %>
-        </div>
-        <div class="praticien-infos">
-          <h2> <%= cabinet.name %> </h2>
-          <p> <%= cabinet.description %> </p>
-          <%= link_to "Prendre RDV", "/cabinets/:id" %>
-        </div>
+<div class=health>
+<div class="big-praticien-container">
+  <div class="praticiens-container">
+    <% @cabinets.each do |cabinet| %>
+    <div class="praticien-card">
+      <div class="p-avatar">
+        <%= cl_image_tag cabinet.photo.key %>
+      </div>
+      <div class="praticien-infos">
+        <h2> <%= cabinet.name %> </h2>
+        <p> <%= cabinet.description %> </p>
+        <%= link_to "Prendre RDV", "/cabinets/:id" %>
       </div>
       <% end %>
     </div>
   </div>
-</body>
+</div>
