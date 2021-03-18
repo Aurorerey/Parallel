@@ -1,8 +1,15 @@
 class Cabinet < ApplicationRecord
   belongs_to :user
   has_one_attached :photo
-  geocoded_by :address
+  # geocoded_by :address
   # after_validation :geocode, if: :will_save_change_to_adresse_cabinet?
+
+  include PgSearch::Model
+  pg_search_scope :search_by_adresse_cabinet,
+    against: [ :adresse_cabinet ],
+    using: {
+      tsearch: { prefix: true } # <-- now `superman batm` will return something!
+    }
   # Doit posseder un compte
   #has_one :account
   #validates :account, presence: true

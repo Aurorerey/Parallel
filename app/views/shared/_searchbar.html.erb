@@ -2,6 +2,33 @@
     <p class="search__title">
       Je trouve mon practicien
     </p>
+
+      <%= form_tag cabinets_path, method: :get, class: "searchbar" do %>
+        <%= text_field_tag :query_activity,
+            params[:query_activity],
+            class: "search__input",
+            placeholder: "Pratique" %>
+          <%= text_field_tag :query_localisation,
+            params[:query_localisation],
+            class: "search__input",
+            placeholder: "Localisation" %>
+        <%= button_tag :submit do %>
+         <i class="btn btn-outline-dark fa fa-leaf"></i>
+         <% end %>
+      <% end %>
+</div>
+
+
+
+
+
+
+
+
+<div class="search__container">
+    <p class="search__title">
+      Je trouve mon practicien
+    </p>
     <div class="searchbar">
         <input class="search__input" type="text" placeholder="Pratique">
         <input class="search__input" type="text" placeholder="Localisation">
