@@ -1,29 +1,26 @@
-.praticiens-container {
+.big-praticien-container {
   display: flex;
   justify-content: center;
 }
+
+.praticiens-container {
+  overflow: scroll;
+  height: 500px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 100px;
+  margin-top: 50px;
+}
+
 .praticien-card {
-  overflow: hidden;
-  height: 175px;
-  width: 350px;
   background: orange;
+  height: 175px;
+  width: 400px;
   display: flex;
-  align-items: center;
-  justify-content: space-around;
-  margin: 50px;
-  border-radius: 5px;
 }
 
-.praticien-infos {
-  padding-left: 20px;
-}
-
-.praticien-infos h2 {
-  font-size: 25px;
-}
-
-
-.avatar-bordered {
-  width: 100px;
-  height: 100px;
+.p-avatar img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
 }
