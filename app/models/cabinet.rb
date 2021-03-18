@@ -1,6 +1,8 @@
 class Cabinet < ApplicationRecord
   belongs_to :user
   has_one_attached :photo
+  geocoded_by :address
+  # after_validation :geocode, if: :will_save_change_to_adresse_cabinet?
   # Doit posseder un compte
   #has_one :account
   #validates :account, presence: true

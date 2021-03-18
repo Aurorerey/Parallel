@@ -1,3 +1,4 @@
+<%= render 'shared/searchbar' %>
 
 <div class=health>
 <div class="big-praticien-container">
@@ -12,8 +13,7 @@
         <p> <%= cabinet.description %> </p>
         <%= link_to "Prendre RDV", "/cabinets/:id" %>
       </div>
+      <% end %>
     </div>
-    <% end %>
   </div>
 </div>
-
