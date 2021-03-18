@@ -38,6 +38,13 @@ class CabinetsController < ApplicationController
     @body_class = 'health'
     @cabinet = Cabinet.find(params[:id])
     @reservation = Reservation.new
+    @cabinets = Cabinet.all
+    @markers = @cabinets.geocoded.map do |cabinet|
+      {
+        lat: cabinet.latitude,
+        lng: cabinet.longitude
+      }
+    end
   end
 
   def destroy
