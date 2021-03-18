@@ -1,5 +1,6 @@
 .praticiens-container {
   display: flex;
+  justify-content: center;
 }
 .praticien-card {
   overflow: hidden;
@@ -10,6 +11,7 @@
   align-items: center;
   justify-content: space-around;
   margin: 50px;
+  border-radius: 5px;
 }
 
 .praticien-infos {
@@ -21,3 +23,7 @@
 }
 
 
+.avatar-bordered {
+  width: 100px;
+  height: 100px;
+}
