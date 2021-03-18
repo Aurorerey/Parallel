@@ -29,21 +29,5 @@ import { initMapbox } from '../plugins/init_mapbox';
 // import { initSelect2 } from '../components/init_select2';
 
 document.addEventListener('turbolinks:load', () => {
-  // Call your functions here, e.g:
-  // function AnimateTransition(){
-  //   container: container,
-  //   blockIn: popup,
-  //   animation: 'cover-in',
-  //   onTransitionStart: function (blockIn, blockOut, container, event) {
-  import { initMapbox } from '../plugins/init_mapbox';
-
-  document.addEventListener('turbolinks:load', () => {
     initMapbox();
-  })
-  //   },
-  //   onTransitionEnd: function (blockIn, blockOut, container, event) {
-
-  //   }
-  // };
-  // initSelect2();
 });

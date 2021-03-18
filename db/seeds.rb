@@ -15,7 +15,6 @@ User.destroy_all
 Activity.destroy_all
 Category.destroy_all
 
-
 Category.create!(name:"decouvrir")
 
 categories = Category.all
