@@ -21,6 +21,10 @@ Category.create!(name:"decouvrir")
 categories = Category.all
 
 Activity.create!(name:"hypnose", category: categories.sample)
+Activity.create!(name:"radiesthesie", category: categories.sample)
+Activity.create!(name:"naturopathie", category: categories.sample)
+Activity.create!(name:"magnétisme", category: categories.sample)
+Activity.create!(name:"sophrologie", category: categories.sample)
 
 User.create!(nom:"Irlande", prenom:"Chloé", email:"chloeirlande@gmail.com", email_confirmation:"chloeirlande@gmail.com",
 password:"chloechloe",city: "Marseille", adresse: "32 rue de la morue", code_postal: 13003, telephone: 0111223344)

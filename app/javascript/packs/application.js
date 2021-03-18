@@ -24,7 +24,7 @@ require("channels")
 
 // External imports
 import "bootstrap";
-
+import { initMapbox } from '../plugins/init_mapbox';
 // Internal imports, e.g:
 // import { initSelect2 } from '../components/init_select2';
 
@@ -35,7 +35,11 @@ document.addEventListener('turbolinks:load', () => {
   //   blockIn: popup,
   //   animation: 'cover-in',
   //   onTransitionStart: function (blockIn, blockOut, container, event) {
+  import { initMapbox } from '../plugins/init_mapbox';
 
+  document.addEventListener('turbolinks:load', () => {
+    initMapbox();
+  })
   //   },
   //   onTransitionEnd: function (blockIn, blockOut, container, event) {
 
