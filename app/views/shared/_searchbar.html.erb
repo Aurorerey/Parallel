@@ -1,49 +1,19 @@
 <div class="search__container">
-    <p class="search__title">
+    <p class="searchtext">
       Je trouve mon practicien
     </p>
 
-      <%= form_tag cabinets_path, method: :get, class: "searchbar" do %>
+     <%= form_tag cabinets_path, method: :get, class: "search1" do %>
         <%= text_field_tag :query_activity,
             params[:query_activity],
-            class: "search__input",
+            class: "searchTerm",
             placeholder: "Pratique" %>
           <%= text_field_tag :query_localisation,
             params[:query_localisation],
-            class: "search__input",
+            class: "searchTerm2",
             placeholder: "Localisation" %>
-        <%= button_tag :submit do %>
-         <i class="btn btn-outline-dark fa fa-leaf"></i>
+          <%= button_tag :submit, :class => 'searchButton' do %>
+         <i class="fa fa-search" ></i>
          <% end %>
       <% end %>
 </div>
-
-
-
-
-
-
-
-
-<!-- <div class="search__container">
-    <p class="search__title">
-      Je trouve mon practicien
-    </p>
-    <div class="searchbar">
-        <input class="search__input" type="text" placeholder="Pratique">
-        <input class="search__input" type="text" placeholder="Localisation">
-        <button type="submit"><i class="btn btn-outline-dark fa fa-leaf"></i></button>
-=======
->>>>>>> master
-
-<div class="search__container">
-  <p class="searchtext">Je trouve mon practicien </p>
-   <div class="search1">
-      <input type="text" class="searchTerm" placeholder="Medecine">
-      <input type="text" class="searchTerm2" placeholder="Localisation">
-      <button type="submit" class="searchButton">
-        <i class="fa fa-search"></i>
-     </button>
-   </div>
-</div>
- -->
