@@ -1,6 +1,8 @@
 class Cabinet < ApplicationRecord
   belongs_to :user
   has_one_attached :photo
+  # has one practice
+
   geocoded_by :adresse_cabinet
   after_validation :geocode, if: :will_save_change_to_adresse_cabinet?
 

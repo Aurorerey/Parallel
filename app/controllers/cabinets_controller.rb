@@ -3,7 +3,6 @@ class CabinetsController < ApplicationController
     @body_class = 'health'
     @cabinets = Cabinet.all
 
-
     if params[:query_localisation].present? && params[:query_activity].present?
       @cabinets = Cabinet.search_by_adresse_cabinet(params[:query_localisation])
       @activities = Activity.search_by_name(params[:query_activity])
