@@ -3,6 +3,16 @@
 
 <div class="health">
 
+  <div class="container-cabinet-show">
+  <div class="card-show-cabinet">
+    <div class="practicien-card-show">
+        <h1><%= @cabinet.name %></h1>
+        <div class="p-avatar">
+        <%= cl_image_tag @cabinet.photo.key %>
+       </div>
+    </div>
+  </div>
+
 
 <!-- WARNING WARNING WARNING DON'T TOUCH THE CODE-->
 <!-- Sous ce commentaire se trouve l'ensemble du code calendrier avec le pop up confirmation (copier le code avec les commentaires) -->
