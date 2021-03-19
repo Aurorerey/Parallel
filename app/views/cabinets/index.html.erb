@@ -11,7 +11,7 @@
           <div class="praticien-infos">
             <h2> <%= cabinet.name %> </h2>
             <p> <%= cabinet.description %> </p>
-            <%= link_to "Prendre RDV", "/cabinets/:id" %>
+            <%= link_to "Prendre RDV", cabinet_path(cabinet) %>
           </div>
         </div>
       <% end %>
