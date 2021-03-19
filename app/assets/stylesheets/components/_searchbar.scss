@@ -17,7 +17,23 @@
   display: flex;
 }
 
+.search3 {
+  width: 100%;
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+
+.searchtext3 {
+ margin-left: 180px;
+
+}
+
 .search__container2 {
+  padding: 30px;
+}
+
+.search__container3 {
   padding: 30px;
 }
 
@@ -42,6 +58,29 @@
   outline: none;
   color: #9DBFAF;
 }
+
+.searchTermhealth {
+  width: 420px;
+  border: 3px solid white;
+  border-right: none;
+  padding: 15px;
+  height: 20px;
+  border-radius: 5px 0 0 5px;
+  outline: none;
+  color: #9DBFAF;
+}
+
+.searchTerm2health {
+  width: 420px;
+  border: 3px solid white;
+  border-right: none;
+  padding: 15px;
+  height: 20px;
+
+  outline: none;
+  color: #9DBFAF;
+}
+
 
 .searchTerm:focus{
   color: #00B4CC;

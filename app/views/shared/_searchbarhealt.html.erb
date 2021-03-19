@@ -1,16 +1,16 @@
-<div class="search__container2">
-    <p class="searchtext">
+<div class="search__container3">
+    <p class="searchtext3">
       Je trouve mon practicien
     </p>
 
-     <%= form_tag cabinets_path, method: :get, class: "search2" do %>
+     <%= form_tag cabinets_path, method: :get, class: "search3" do %>
         <%= text_field_tag :query_activity,
             params[:query_activity],
-            class: "searchTerm",
+            class: "searchTermhealth",
             placeholder: "Pratique" %>
           <%= text_field_tag :query_localisation,
             params[:query_localisation],
-            class: "searchTerm2",
+            class: "searchTerm2health",
             placeholder: "Localisation" %>
           <%= button_tag :submit, :class => 'searchButton' do %>
          <i class="fa fa-search" ></i>
