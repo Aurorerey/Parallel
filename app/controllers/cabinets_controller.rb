@@ -4,9 +4,15 @@ class CabinetsController < ApplicationController
     @cabinets = Cabinet.all
 
     if params[:query_localisation].present? && params[:query_activity].present?
-      @cabinets = Cabinet.search_by_adresse_cabinet(params[:query_localisation])
-      @activities = @cabinets.where("adresse_cabinet LIKE ?", "%" + params[:query_activity])
-      raise
+      @all_cabinets = Cabinet.search_by_adresse_cabinet(params[:query_localisation])
+      activity = Activity.find_by(name: params[:query_activity].downcase.capitalize)
+      @cabinets = @all_cabinets.joins(:practices).where(practices: { activity_id: activity.id })
+
+      # @all_cabinets.each do |cabinet|
+      #   cabinet.activities.each do |activity|
+      #     @cabinets << cabinet if activity.name.downcase == params[:query_activity].downcase
+      #   end
+      # end
     else
       @cabinets = Cabinet.all
       @activities = Activity.all

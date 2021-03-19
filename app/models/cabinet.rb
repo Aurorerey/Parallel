@@ -4,7 +4,6 @@ class Cabinet < ApplicationRecord
   has_many :practices
   has_many :activities, through: :practices
 
-
   geocoded_by :adresse_cabinet
   after_validation :geocode, if: :will_save_change_to_adresse_cabinet?
 
@@ -13,12 +12,10 @@ class Cabinet < ApplicationRecord
 
   include PgSearch::Model
   pg_search_scope :search_by_adresse_cabinet,
-    against: [ :adresse_cabinet ],
+    against: [:adresse_cabinet],
     using: {
       tsearch: { prefix: true } # <-- now `superman batm` will return something!
     }
-
-
 
   # Doit posseder un compte
   #has_one :account
