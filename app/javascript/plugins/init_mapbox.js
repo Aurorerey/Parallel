@@ -3,7 +3,7 @@ import 'mapbox-gl/dist/mapbox-gl.css';
 
 const addPopUpToMarkers = (map, markers) => {
   markers.forEach((marker) => {
-    const popup = new mapboxgl.Popup().setHTML(marker.infoWindow); // add this
+    const popup = new mapboxgl.Popup({ className: "map-popup"}).setHTML(marker.infoWindow); // add this
 
     new mapboxgl.Marker()
       .setLngLat([ marker.lng, marker.lat ])
@@ -25,7 +25,7 @@ const initMapbox = () => {
     mapboxgl.accessToken = mapElement.dataset.mapboxApiKey;
     const map = new mapboxgl.Map({
       container: 'map',
-      style: 'mapbox://styles/mapbox/streets-v10'
+      style: 'mapbox://styles/goldeneagles333/ckm3dqj74awjy17qp6sagroko'
     });
     const markers = JSON.parse(mapElement.dataset.markers);
     markers.forEach((marker) => {

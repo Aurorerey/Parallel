@@ -1,2 +1,10 @@
-<h2><%= cabinet.name %></h2>
-<p><%= cabinet.adresse_cabinet %></p>
+<div class="divpopup">
+  <div class="p-avatar2">
+    <%= cl_image_tag cabinet.photo.key %>
+  </div>
+  <h4 style="color: white;"><%= cabinet.name %></h4>
+</div>
+<div class="popuptext">
+  <p style="color: white;"><%= cabinet.adresse_cabinet %></p>
+  <p style="color: white;"><%= cabinet.email %></p>
+</div>
