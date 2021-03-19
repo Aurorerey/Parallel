@@ -5,21 +5,20 @@
 /* Base styling */
 
 
-.searchbar {
-    display: flex;
-    flex-direction: row;
-}
-
-.searchtext {
-  display:flex;
-   justify-content: flex-start;
-}
-
 .search1 {
   width: 100%;
   position: relative;
   display: flex;
+}
 
+.search2 {
+  width: 100%;
+  position: relative;
+  display: flex;
+}
+
+.search__container2 {
+  padding: 30px;
 }
 
 .searchTerm {
