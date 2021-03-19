@@ -6,6 +6,6 @@ class ActivitiesController < ApplicationController
 
   def show
     @body_class = 'activities'
-    @activities = Activity.find(params[:id])
+    @activity = Activity.find(params[:id])
   end
 end
