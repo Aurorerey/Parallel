@@ -3,9 +3,13 @@
   margin: 0 auto;
   display: flex;
   justify-content: flex-end;
+  flex-direction: row;
   font-size: 30px;
   color: white;
+      padding-top: 60px;
 }
+
+
 .btn-home {
   height: 200px;
   min-width: 200px;
