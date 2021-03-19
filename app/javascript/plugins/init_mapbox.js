@@ -1,7 +1,7 @@
 import mapboxgl from 'mapbox-gl';
 import 'mapbox-gl/dist/mapbox-gl.css';
 
-const addMarkersToMap = (map, markers) => {
+const addPopUpToMarkers = (map, markers) => {
   markers.forEach((marker) => {
     const popup = new mapboxgl.Popup().setHTML(marker.infoWindow); // add this
 
@@ -28,12 +28,13 @@ const initMapbox = () => {
       style: 'mapbox://styles/mapbox/streets-v10'
     });
     const markers = JSON.parse(mapElement.dataset.markers);
-      markers.forEach((marker) => {
+    markers.forEach((marker) => {
       new mapboxgl.Marker()
         .setLngLat([ marker.lng, marker.lat ])
         .addTo(map);
-  });
+    });
     fitMapToMarkers(map, markers);
+    addPopUpToMarkers(map, markers);
   }
 };
 
