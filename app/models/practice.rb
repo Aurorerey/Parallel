@@ -1,4 +1,4 @@
 class Practice < ApplicationRecord
-  belongs_to :activity
-  belongs_to :cabinet
+  has_one :activity
+  has_one :cabinet
 end

@@ -15,17 +15,12 @@ Reservation.destroy_all
 Cabinet.destroy_all
 User.destroy_all
 Activity.destroy_all
-Category.destroy_all
 
-Category.create!(name:"decouvrir")
-
-categories = Category.all
-
-Activity.create!(name:"Hypnose", category: categories.sample)
-Activity.create!(name:"Radiesthesie", category: categories.sample)
-Activity.create!(name:"Naturopathie", category: categories.sample)
-Activity.create!(name:"Magnétisme", category: categories.sample)
-Activity.create!(name:"Sophrologie", category: categories.sample)
+Activity.create!(name:"Hypnose")
+Activity.create!(name:"Radiesthesie")
+Activity.create!(name:"Naturopathie")
+Activity.create!(name:"Magnétisme")
+Activity.create!(name:"Sophrologie")
 
 User.create!(nom:"Irlande", prenom:"Chloé", email:"chloeirlande@gmail.com", email_confirmation:"chloeirlande@gmail.com",
 password:"chloechloe",city: "Marseille", adresse: "32 rue de la morue", code_postal: 13003, telephone: 0111223344)
