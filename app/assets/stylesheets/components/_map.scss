@@ -1,8 +1,47 @@
 .mapboxgl-popup {
   max-width: 200px;
+  opacity: 1;
+  transition: 2s opacity ease-in-out;
 }
 
 .mapboxgl-popup-content {
   text-align: center;
   font-family: 'Open Sans', sans-serif;
+}
+
+.divpopup {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  h4 {
+    margin-top: 7px;
+    margin-left: 10px;
+  }
+  p {
+    margin-top: 15px;
+  }
+}
+
+.map-popup {
+  max-width: 200px;
+  border-radius: 5px;
+  opacity: 1;
+  transition: 2s opacity ease-in-out;
+  .mapboxgl-popup-content {
+    background-color: #AED7C9;
+    opacity: 0;
+    animation: 1s opacite 0s linear forwards;
+  .mapboxgl-popup-tip {
+    background-color: #AED7C9;
+  }
+  .mapboxgl-popup-close-button {
+  }
+  }
+}
+
+.popuptext {
+  p {
+    margin: 0px;
+    padding: 0px;
+  }
 }

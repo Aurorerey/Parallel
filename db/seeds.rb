@@ -16,11 +16,11 @@ Cabinet.destroy_all
 User.destroy_all
 Activity.destroy_all
 
-Activity.create!(name:"Hypnose")
-Activity.create!(name:"Radiesthesie")
-Activity.create!(name:"Naturopathie")
-Activity.create!(name:"Magnétisme")
-Activity.create!(name:"Sophrologie")
+Activity.create!(name:"Hypnose", description: "blablabla")
+Activity.create!(name:"Radiesthesie", description: "blabla")
+Activity.create!(name:"Naturopathie", description: "blabla")
+Activity.create!(name:"Magnétisme", description: "blabla")
+Activity.create!(name:"Sophrologie", description: "blabla")
 
 User.create!(nom:"Irlande", prenom:"Chloé", email:"chloeirlande@gmail.com", email_confirmation:"chloeirlande@gmail.com",
 password:"chloechloe",city: "Marseille", adresse: "32 rue de la morue", code_postal: 13003, telephone: 0111223344)
