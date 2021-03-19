@@ -1,13 +1,19 @@
+.mapboxgl-popup-tip {
+}
+
 .mapboxgl-popup {
   max-width: 200px;
-  opacity: 1;
-  transition: 2s opacity ease-in-out;
 }
 
 .mapboxgl-popup-content {
   text-align: center;
   font-family: 'Open Sans', sans-serif;
+  background-color: white;
+  color: black;
+  border-radius: 50%;
+  border-color: black;
 }
+
 
 .divpopup {
   display: flex;
