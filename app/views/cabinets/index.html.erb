@@ -1,17 +1,24 @@
-  <%= render 'shared/searchbar' %>
+<%= render 'shared/searchbar' %>
+
+<div class=health>
   <div class="big-praticien-container">
     <div class="praticiens-container">
       <% @cabinets.each do |cabinet| %>
-      <div class="praticien-card">
-        <div class="p-avatar">
-          <%= cl_image_tag cabinet.photo.key %>
+        <div class="praticien-card">
+          <div class="p-avatar">
+            <%= cl_image_tag cabinet.photo.key %>
+          </div>
+          <div class="praticien-infos">
+            <h2> <%= cabinet.name %> </h2>
+            <p> <%= cabinet.description %> </p>
+            <%= link_to "Prendre RDV", "/cabinets/:id" %>
+          </div>
         </div>
-        <div class="praticien-infos">
-          <h2> <%= cabinet.name %> </h2>
-          <p> <%= cabinet.description %> </p>
-          <%= link_to "Prendre RDV", "/cabinets/:id" %>
-        </div>
-      </div>
       <% end %>
     </div>
   </div>
+</div>
+<div id="map"
+     style="width: 100%; height: 600px;"
+     data-markers="<%= @markers.to_json %>"
+     data-mapbox-api-key="<%= ENV['MAPBOX_API_KEY'] %>"></div>
