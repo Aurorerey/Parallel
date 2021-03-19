@@ -77,57 +77,94 @@ cabinet1 = Cabinet.create!(name: "Jeanne", description: "Un cabinet sympa", user
 email: "jeanmeditation@gmail.com", cp_cabinet: 13008, adresse_cabinet: real_adress.sample)
 cabinet1.photo.attach(io: file, filename: 'prof4', content_type: 'image/png')
 
+Practice.create!(cabinet_id: Cabinet.last.id, activity_id: Activity.all.sample.id)
+Practice.create!(cabinet_id: Cabinet.last.id, activity_id: Activity.all.sample.id)
+
 file1 = URI.open('https://res.cloudinary.com/cloudpandora/image/upload/v1615975021/Photos%20Pros/prof4.png')
 cabinet2 = Cabinet.create!(name: "Beatrice", description: "Un cabinet sympa", user_id: users.sample.id,
 email: "jeanmeditation@gmail.com", cp_cabinet: 13008, adresse_cabinet: real_adress.sample)
 cabinet2.photo.attach(io: file1, filename: 'prof4', content_type: 'image/png')
+
+Practice.create!(cabinet_id: Cabinet.last.id, activity_id: Activity.all.sample.id)
+Practice.create!(cabinet_id: Cabinet.last.id, activity_id: Activity.all.sample.id)
 
 file2 = URI.open('https://res.cloudinary.com/cloudpandora/image/upload/v1615975021/Photos%20Pros/prof4.png')
 cabinet3 = Cabinet.create!(name: "Jean-Claude", description: "Un cabinet sympa", user_id: users.sample.id,
 email: "jeanmeditation@gmail.com", cp_cabinet: 13008, adresse_cabinet: real_adress.sample)
 cabinet3.photo.attach(io: file2, filename: 'prof4', content_type: 'image/png')
 
+Practice.create!(cabinet_id: Cabinet.last.id, activity_id: Activity.all.sample.id)
+Practice.create!(cabinet_id: Cabinet.last.id, activity_id: Activity.all.sample.id)
+
 file3 = URI.open('https://res.cloudinary.com/cloudpandora/image/upload/v1615975021/Photos%20Pros/prof4.png')
 cabinet4 = Cabinet.create!(name: "Un moment pour soi", description: "Un cabinet sympa", user_id: users.sample.id,
 email: "jeanmeditation@gmail.com", cp_cabinet: 13008, adresse_cabinet: real_adress.sample)
 cabinet4.photo.attach(io: file3, filename: 'prof4', content_type: 'image/png')
+
+Practice.create!(cabinet_id: Cabinet.last.id, activity_id: Activity.all.sample.id)
+Practice.create!(cabinet_id: Cabinet.last.id, activity_id: Activity.all.sample.id)
 
 file4 = URI.open('https://res.cloudinary.com/cloudpandora/image/upload/v1615975021/Photos%20Pros/prof4.png')
 cabinet5 = Cabinet.create!(name: "Un moment pour soi", description: "Un cabinet sympa", user_id: users.sample.id,
 email: "jeanmeditation@gmail.com", cp_cabinet: 13008, adresse_cabinet: real_adress.sample)
 cabinet5.photo.attach(io: file4, filename: 'prof4', content_type: 'image/png')
 
+Practice.create!(cabinet_id: Cabinet.last.id, activity_id: Activity.all.sample.id)
+Practice.create!(cabinet_id: Cabinet.last.id, activity_id: Activity.all.sample.id)
+
 file5 = URI.open('https://res.cloudinary.com/cloudpandora/image/upload/v1615975021/Photos%20Pros/prof4.png')
 cabinet6 = Cabinet.create!(name: "Un moment pour soi", description: "Un cabinet sympa", user_id: users.sample.id,
 email: "jeanmeditation@gmail.com", cp_cabinet: 13008, adresse_cabinet: real_adress.sample)
 cabinet6.photo.attach(io: file5, filename: 'prof4', content_type: 'image/png')
+
+Practice.create!(cabinet_id: Cabinet.last.id, activity_id: Activity.all.sample.id)
+Practice.create!(cabinet_id: Cabinet.last.id, activity_id: Activity.all.sample.id)
 
 file6 = URI.open('https://res.cloudinary.com/cloudpandora/image/upload/v1615975021/Photos%20Pros/prof4.png')
 cabinet7 = Cabinet.create!(name: "Un moment pour soi", description: "Un cabinet sympa", user_id: users.sample.id,
 email: "jeanmeditation@gmail.com", cp_cabinet: 13008, adresse_cabinet: real_adress.sample)
 cabinet7.photo.attach(io: file6, filename: 'prof4', content_type: 'image/png')
 
+Practice.create!(cabinet_id: Cabinet.last.id, activity_id: Activity.all.sample.id)
+Practice.create!(cabinet_id: Cabinet.last.id, activity_id: Activity.all.sample.id)
+
 file7 = URI.open('https://res.cloudinary.com/cloudpandora/image/upload/v1615975021/Photos%20Pros/prof4.png')
 cabinet8 = Cabinet.create!(name: "Un moment pour soi", description: "Un cabinet sympa", user_id: users.sample.id,
 email: "jeanmeditation@gmail.com", cp_cabinet: 13008, adresse_cabinet: real_adress.sample)
 cabinet8.photo.attach(io: file7, filename: 'prof4', content_type: 'image/png')
+
+Practice.create!(cabinet_id: Cabinet.last.id, activity_id: Activity.all.sample.id)
+Practice.create!(cabinet_id: Cabinet.last.id, activity_id: Activity.all.sample.id)
 
 file8 = URI.open('https://res.cloudinary.com/cloudpandora/image/upload/v1615975021/Photos%20Pros/prof4.png')
 cabinet9 = Cabinet.create!(name: "Un moment pour soi", description: "Un cabinet sympa", user_id: users.sample.id,
 email: "jeanmeditation@gmail.com", cp_cabinet: 13008, adresse_cabinet: real_adress.sample)
 cabinet9.photo.attach(io: file8, filename: 'prof4', content_type: 'image/png')
 
+Practice.create!(cabinet_id: Cabinet.last.id, activity_id: Activity.all.sample.id)
+Practice.create!(cabinet_id: Cabinet.last.id, activity_id: Activity.all.sample.id)
+
 file9 = URI.open('https://res.cloudinary.com/cloudpandora/image/upload/v1615975021/Photos%20Pros/prof4.png')
 cabinet10 = Cabinet.create!(name: "Un moment pour soi", description: "Un cabinet sympa", user_id: users.sample.id,
 email: "jeanmeditation@gmail.com", cp_cabinet: 13008, adresse_cabinet: real_adress.sample)
 cabinet10.photo.attach(io: file9, filename: 'prof4', content_type: 'image/png')
+
+Practice.create!(cabinet_id: Cabinet.last.id, activity_id: Activity.all.sample.id)
+Practice.create!(cabinet_id: Cabinet.last.id, activity_id: Activity.all.sample.id)
 
 file10 = URI.open('https://res.cloudinary.com/cloudpandora/image/upload/v1615975021/Photos%20Pros/prof4.png')
 cabinet11 = Cabinet.create!(name: "Un moment pour soi", description: "Un cabinet sympa", user_id: users.sample.id,
 email: "jeanmeditation@gmail.com", cp_cabinet: 13008, adresse_cabinet: real_adress.sample)
 cabinet11.photo.attach(io: file10, filename: 'prof4', content_type: 'image/png')
 
+Practice.create!(cabinet_id: Cabinet.last.id, activity_id: Activity.all.sample.id)
+Practice.create!(cabinet_id: Cabinet.last.id, activity_id: Activity.all.sample.id)
+
 file11 = URI.open('https://res.cloudinary.com/cloudpandora/image/upload/v1615975021/Photos%20Pros/prof4.png')
 cabinet12 = Cabinet.create!(name: "Un moment pour soi", description: "Un cabinet sympa", user_id: users.sample.id,
 email: "jeanmeditation@gmail.com", cp_cabinet: 13008, adresse_cabinet: real_adress.sample)
 cabinet12.photo.attach(io: file11, filename: 'prof4', content_type: 'image/png')
+
+Practice.create!(cabinet_id: Cabinet.last.id, activity_id: Activity.all.sample.id)
+Practice.create!(cabinet_id: Cabinet.last.id, activity_id: Activity.all.sample.id)
+

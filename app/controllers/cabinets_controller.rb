@@ -3,6 +3,21 @@ class CabinetsController < ApplicationController
     @body_class = 'health'
     @cabinets = Cabinet.all
 
+    if params[:query_localisation].present? && params[:query_activity].present?
+      @all_cabinets = Cabinet.search_by_adresse_cabinet(params[:query_localisation])
+      activity = Activity.find_by(name: params[:query_activity].downcase.capitalize)
+      @cabinets = @all_cabinets.joins(:practices).where(practices: { activity_id: activity.id })
+
+      # @all_cabinets.each do |cabinet|
+      #   cabinet.activities.each do |activity|
+      #     @cabinets << cabinet if activity.name.downcase == params[:query_activity].downcase
+      #   end
+      # end
+    else
+      @cabinets = Cabinet.all
+      @activities = Activity.all
+    end
+
     @markers = @cabinets.geocoded.map do |cabinet|
       {
         lat: cabinet.latitude,
@@ -10,6 +25,12 @@ class CabinetsController < ApplicationController
         infoWindow: render_to_string(partial: "info_window", locals: { cabinet: cabinet })
       }
     end
+    # @markers = @cabinets.geocoded.map do |cabinet|
+    #   {
+    #     lat: cabinet.latitude,
+    #     lng: cabinet.longitude
+    #   }
+    # end
   end
 
   def new
