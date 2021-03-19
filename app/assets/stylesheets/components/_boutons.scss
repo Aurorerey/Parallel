@@ -6,7 +6,7 @@
   flex-direction: row;
   font-size: 30px;
   color: white;
-      padding-top: 60px;
+  padding-top: 60px;
 }
 
 
@@ -24,7 +24,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  opacity: 90%;
+  opacity: 80%;
  }
 
 
@@ -87,7 +87,7 @@
   background-position: right center;
   z-index: 10; /* change the direction of the change here */
   transition: 1s ease-in-out;
-  opacity: 100%;
+  opacity: 90%;
 }
 
 
@@ -101,7 +101,7 @@
   text-decoration: none;
   background-position: right center;/* change the direction of the change here */
   transition: 1s ease-in-out;
-  opacity: 100%;
+  opacity: 90%;
 }
 
 .btn-1 {
