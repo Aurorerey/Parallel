@@ -1,15 +1,18 @@
-body.home {
-background-image: url(https://res.cloudinary.com/cloudpandora/image/upload/v1616004050/Photos%20Pros/Background-home_kavy6n.jpg);
+ body.home {
+background-image: url(https://res.cloudinary.com/cloudpandora/image/upload/v1616260346/Photos%20Pros/Background-vert_xavcjh.jpg);
 
 }
 
 body.activities {
-background-image: url(https://res.cloudinary.com/cloudpandora/image/upload/v1616012887/Photos%20Pros/Background-activities_svz2gf.jpg);
+background-image: url(https://res.cloudinary.com/cloudpandora/image/upload/v1616260517/Photos%20Pros/Background-simple_xroeme.jpg);
 }
 
 body.health {
-background-image: url(https://res.cloudinary.com/cloudpandora/image/upload/v1616069316/Photos%20Pros/Background-cabinet_ojsdex.jpg);
+background-image: url(https://res.cloudinary.com/cloudpandora/image/upload/v1616260346/Photos%20Pros/Background-vert_xavcjh.jpg);
 }
+
+
+
 
 body{
     margin: 0;
@@ -17,5 +20,9 @@ body{
     color: white;
     background-size: cover;
     min-height: 100vh;
+    font-family: roboto;
   }
 
+h1 {
+  font-family: 'Martel', serif;
+}

@@ -7,9 +7,10 @@
   color: white;
   text-align: center;
   margin-top: 60px;
-  margin-bottom: 100px;
+  margin-bottom: 10px;
   display: flex;
   align-content: flex-end;
+  font-family: 'Martel', serif;
    }
   p {
   color: white;
@@ -17,6 +18,7 @@
   margin-top: 30px;
   display: flex;
   align-content: flex-end;
+  font-style: bold;
    }
 
    h2 {
@@ -43,7 +45,7 @@
     padding-left: 30px;
     padding-right: 600px;
   }
-  hr {
+  h1 {
     border-width: thin;
     border-color: black;
     margin-right: 70px;
