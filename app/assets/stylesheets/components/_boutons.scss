@@ -6,7 +6,7 @@
   flex-direction: row;
   font-size: 30px;
   color: white;
-  padding-top: 60px;
+  padding-top: 100px;
 }
 
 
@@ -56,30 +56,28 @@
   justify-content: center;
   position: absolute;
   &.btn-1 {
-    right: 150px;
-    bottom: 100px;
+    right: 120px;
+    bottom: 115px;
   }
     &.btn-2 {
-    right: 200px;
-    bottom:200px;
+    right: 220px;
+    bottom: 245px;
 
   }
     &.btn-3 {
     right: 350px;
-    bottom: 150px;
+    bottom: 190px;
   }
     &.btn-5 {
-    right: 250px;
+    right: 220px;
     bottom: 10px;
   }
      &.btn-4 {
     right: 350px;
-    bottom: 30px;
+    bottom: 60px;
   }
 
  }
-
-
 
  .btn-activities:hover {
   color: white;
@@ -89,8 +87,6 @@
   transition: 1s ease-in-out;
   opacity: 90%;
 }
-
-
 
 /* Demo Stuff End -> */
 
@@ -105,23 +101,23 @@
 }
 
 .btn-1 {
-  background-image: linear-gradient(to right, #f6d365 0%, #fda085 51%, #f6d365 100%);
+  background-image: linear-gradient(to right, #fcb69f  0%, #ffecd2 51%, #84fab0 100%);
 }
 
 .btn-2 {
-  background-image: linear-gradient(to right, #fbc2eb 0%, #a6c1ee 51%, #fbc2eb 100%);
+  background-image: linear-gradient(to right, #c2e9fb 0%, #fcb69f 51%, #ffecd2 100%);
 }
 
 .btn-3 {
-  background-image: linear-gradient(to right, #84fab0 0%, #8fd3f4 51%, #84fab0 100%);
+  background-image: linear-gradient(to right, #84fab0 0%, #fcb69f 51%, #84fab0 100%);
 }
 
 .btn-4 {
-  background-image: linear-gradient(to right, #a1c4fd 0%, #c2e9fb 51%, #a1c4fd 100%);
+  background-image: linear-gradient(to right, #fcb69f 0%, #c2e9fb 51%, #a1c4fd 100%);
 }
 
 .btn-5 {
-  background-image: linear-gradient(to right, #ffecd2 0%, #fcb69f 51%, #ffecd2 100%);
+  background-image: linear-gradient(to right, #ffecd2 0%, #fcb69f 51%, #c2e9fb 100%);
 }
 
 /* Magic Stuff End -> */
