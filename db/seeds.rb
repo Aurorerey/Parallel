@@ -140,7 +140,7 @@ cabinet9.photo.attach(io: file8, filename: 'prof4', content_type: 'image/png')
 Practice.create!(cabinet_id: Cabinet.last.id, activity_id: Activity.all.sample.id)
 Practice.create!(cabinet_id: Cabinet.last.id, activity_id: Activity.all.sample.id)
 
-file9 = URI.open('https://res.cloudinary.com/cloudpandora/image/upload/v1615975021/Photos%20Pros/prof4.png')
+file9 = URI.open('https://res.cloudinary.com/cloudpandora/image/upload/v1615975004/Photos%20Pros/proh5.png')
 cabinet10 = Cabinet.create!(name: "Franck", description: "Hypnose", user_id: users.sample.id,
 email: "jeanmeditation@gmail.com", cp_cabinet: 13008, adresse_cabinet: real_adress.sample)
 cabinet10.photo.attach(io: file9, filename: 'prof4', content_type: 'image/png')

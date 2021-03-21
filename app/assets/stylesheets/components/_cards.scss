@@ -53,6 +53,8 @@
   border-radius: 50%;
 }
 
+
+
 .container-cabinet-show {
   display: flex;
   justify-content: center;
@@ -60,9 +62,6 @@
 
 .card-show-cabinet {
   height: 500px;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-gap: 100px;
   margin-top: 50px;
 }
 

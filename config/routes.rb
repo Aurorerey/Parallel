@@ -1,6 +1,6 @@
 Rails.application.routes.draw do
   devise_for :users
-  root to: 'pages#home'
+  root to: 'activities#index'
   # Edit profil of user
   # Index and show for activities
     resources :activities, only: [:index, :show]
