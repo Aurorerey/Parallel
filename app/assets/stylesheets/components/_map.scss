@@ -30,15 +30,15 @@
 
 .map-popup {
   max-width: 200px;
-  border-radius: 5px;
+  border-radius: 10px;
   opacity: 1;
   transition: 2s opacity ease-in-out;
   .mapboxgl-popup-content {
-    background-color: #AED7C9;
+    background-color: #D2BAC7;
     opacity: 0;
     animation: 1s opacite 0s linear forwards;
   .mapboxgl-popup-tip {
-    background-color: #AED7C9;
+    background-color: #D2BAC7;
   }
   .mapboxgl-popup-close-button {
   }
@@ -50,4 +50,12 @@
     margin: 0px;
     padding: 0px;
   }
+}
+
+
+.map-index {
+  display: flex;
+  justify-content: center;
+  padding-top: 10px;
+  padding-bottom: 20px;
 }

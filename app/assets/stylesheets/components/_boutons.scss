@@ -57,24 +57,24 @@
   position: absolute;
   &.btn-1 {
     right: 120px;
-    bottom: 115px;
+    bottom: 145px;
   }
     &.btn-2 {
     right: 220px;
-    bottom: 245px;
+    bottom: 275px;
 
   }
     &.btn-3 {
     right: 350px;
-    bottom: 190px;
+    bottom: 220px;
   }
     &.btn-5 {
     right: 220px;
-    bottom: 10px;
+    bottom: 40px;
   }
      &.btn-4 {
     right: 350px;
-    bottom: 60px;
+    bottom: 90px;
   }
 
  }
@@ -101,7 +101,7 @@
 }
 
 .btn-1 {
-  background-image: linear-gradient(to right, #fcb69f  0%, #ffecd2 51%, #84fab0 100%);
+  background-image: linear-gradient(to right, #fcb69f  0%, #ffecd2 51%, #d3ffce 100%);
 }
 
 .btn-2 {
@@ -109,7 +109,7 @@
 }
 
 .btn-3 {
-  background-image: linear-gradient(to right, #84fab0 0%, #fcb69f 51%, #84fab0 100%);
+  background-image: linear-gradient(to right, #d3ffce 0%, #fcb69f 51%, #d3ffce 100%);
 }
 
 .btn-4 {
@@ -117,7 +117,7 @@
 }
 
 .btn-5 {
-  background-image: linear-gradient(to right, #ffecd2 0%, #fcb69f 51%, #c2e9fb 100%);
+  background-image: linear-gradient(to right, #fcb69f  0%, #d3ffce 51%, #ffecd2 100%);
 }
 
 /* Magic Stuff End -> */
