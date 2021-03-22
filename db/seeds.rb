@@ -17,7 +17,13 @@ User.destroy_all
 Activity.destroy_all
 Reservation.destroy_all
 
-Activity.create!(name:"Hypnose", description: "blablabla")
+Activity.create!(name:"Hypnose", description: "L'hypnose permet de renforcer et d’amplifier les ressources présentes dans l’inconscient d’une personne afin de changer sa réalité. Sans hypnose, un sujet n’a accès qu’à ses pensées, ses habitudes et ses comportements conscients, qui sont restreints par des croyances appelées « limitantes ». En entrant dans le subconscient, ces aspects bloquants disparaissent, ce qui permet à l’esprit de développer et d’accéder sans limites à ses idées.
+
+Il existe de nombreuses définitions de l’hypnose et de formes de thérapies hypnotiques. Celles-ci peuvent être longues ou très courtes, les suggestions peuvent être directes ou indirectes, etc.
+
+Les thérapies par l’hypnose sont particulièrement indiquées lors d’états dépressifs, de traumatismes, de phobies ou d’addictions. Certains hôpitaux se servent également de l’hypnose en chirurgie, pour remplacer l’anesthésiant.
+
+Il faut cependant prêter attention à une méprise courante : les réactions à l’hypnose diffèrent selon les personnes. Certaines vont être très réceptives, d’autres moins. Si deux personnes ayant le même traumatisme sont traitées de la même façon, la thérapie peut très bien fonctionner sur l’une et ne pas avoir l’effet attendu sur l’autre. Il est donc nécessaire de faire le bon choix parmi les différents types d’hypnose.")
 Activity.create!(name:"Radiesthesie", description: "blabla")
 Activity.create!(name:"Naturopathie", description: "blabla")
 Activity.create!(name:"Magnétisme", description: "blabla")
