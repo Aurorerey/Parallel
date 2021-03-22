@@ -1,31 +1,35 @@
 <!-- WARNING : CODE DU CALENDRIER CI-DESSOUS / DON'T TOUCH / ONLY FOR CSS CLASS -->
-
+<%= render 'shared/searchbarhealt' %>
 
 <div class="health">
-
   <div class="container-cabinet-show">
-  <div class="card-show-cabinet">
-    <div class="practicien-card-show">
-        <h1><%= @cabinet.name %></h1>
+      <div class="practicien-card-show">
         <div class="p-avatar">
-        <%= cl_image_tag @cabinet.photo.key %>
-       </div>
+          <%= cl_image_tag @cabinet.photo.key %>
+         </div>
+         <div class="praticien_card_info">
+            <h1><%= @cabinet.name %></h1>
+            <h2><%= @cabinet.description %></h2>
+            <h3><%= @cabinet.adresse_cabinet %></h3>
+            <h3><%= @cabinet.cp_cabinet %></h3>
+         </div>
+      </div>
     </div>
-  </div>
-
-
+</div>
 <!-- WARNING WARNING WARNING DON'T TOUCH THE CODE-->
 <!-- Sous ce commentaire se trouve l'ensemble du code calendrier avec le pop up confirmation (copier le code avec les commentaires) -->
 
 <div>
-  <%= calendar(number_of_days: 7) do |date| %>
+  <%= calendar(number_of_days: 5) do |date| %>
     <%= date %>
     <% hour = 8 %>
     <% 10.times do %>
-    <% if Reservation.where(start_time: date + hour.hours).exists? %>
-        <button type="button" class="btn calendarbutton2"><p>Réservé</p></button>
+    <% if date.wday == 0 || date.wday == 6 %>
+      <button type="button" class="calendarbutton3"></button>
+    <% elsif Reservation.where(start_time: date + hour.hours).exists? %>
+        <button type="button" class="calendarbutton2"><p>Réservé</p></button>
         <% else %>
-        <button type="button" class="btn btn-light calendarbutton" data-toggle="modal" data-target="#exampleModal-<%= date %>-<%= hour %>"><p><%= hour %>h - <%= hour + 1 %>h</p></button>
+        <button type="button" class="calendarbutton" data-toggle="modal" data-target="#exampleModal-<%= date %>-<%= hour %>"><p><%= hour %>h - <%= hour + 1 %>h</p></button>
         <% end %>
         <div class="modal fade" id="exampleModal-<%= date %>-<%= hour %>" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
           <div class="modal-dialog" role="document">
@@ -51,13 +55,10 @@
               </div>
             </div>
           </div>
-        </div>
-      <% hour += 1 %>
+          </div>
+        <% hour += 1 %>
+      <% end %>
     <% end %>
-  <% end %>
-</div>
-
-
 </div>
 <!-- Fin du code du calendrier (copier le code avec les commentaires) -->
 

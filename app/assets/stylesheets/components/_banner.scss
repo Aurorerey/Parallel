@@ -1,53 +1,15 @@
-.container-home {
-  height: 90vh;
-  display: flex;
-  margin-left: 96px;
-  margin-right: 96px;
-   h1 {
-  color: white;
-  text-align: center;
-  margin-top: 60px;
-  margin-bottom: 10px;
-  display: flex;
-  align-content: flex-end;
-  font-family: 'Martel', serif;
-   }
-  p {
-  color: white;
-  text-align: center;
-  margin-top: 30px;
-  display: flex;
-  align-content: flex-end;
-  font-style: bold;
-   }
-
-   h2 {
-    color: white;
-    margin-left: 50px;
-    margin-top: 60px;
-    text-align: center;
-   }
-
-    h3 {
-    color: black;
-    text-align: center;
-   }
-  }
-
 .banner-activities {
   padding: 30px;
    h1 {
     color: white;
+    padding-top: 20px;
+    padding-left: 20px;
    }
 }
 
 .show-banner-activities {
   color: black;
   padding-left: 70px;
-  p {
-    padding-left: 30px;
-    padding-right: 600px;
-  }
   h1 {
     border-width: thin;
     border-color: black;

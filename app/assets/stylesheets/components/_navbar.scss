@@ -3,6 +3,9 @@
   background: transparent;
   width: 100%; height: 50px;
   top: 0; left: 0; right: 0;
+   img {
+    width: 200px;
+   }
 }
 
 .navbar-lewagon .navbar-collapse {
@@ -24,3 +27,4 @@
   text-decoration: none;
   color: black;
 }
+
