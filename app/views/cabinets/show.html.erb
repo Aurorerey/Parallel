@@ -44,7 +44,7 @@
                 <p>Rendez-vous le <%= date %> à <%= hour %>h</p>
                 <p>Au Cabinet <%= @cabinet.name %></p>
                 <p>Adresse : <%= @cabinet.adresse_cabinet %> <%= @cabinet.cp_cabinet %></p>
-                <p>Telephone : <%= @cabinet.telephone %></p>
+                <p>Email : <%= @cabinet.email %></p>
               </div>
               <div class="modal-footer">
                 <%= simple_form_for [ @cabinet, @reservation ] do |f| %>

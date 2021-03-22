@@ -2,7 +2,7 @@
 }
 
 .mapboxgl-popup {
-  max-width: 200px;
+  max-width: 250px;
 }
 
 .mapboxgl-popup-content {
@@ -20,10 +20,12 @@
   flex-direction: row;
   justify-content: flex-start;
   h4 {
+    color: black;
     margin-top: 7px;
     margin-left: 10px;
   }
   p {
+    color: black;
     margin-top: 15px;
   }
 }
@@ -32,13 +34,16 @@
   max-width: 200px;
   border-radius: 10px;
   opacity: 1;
+  color: black;
   transition: 2s opacity ease-in-out;
   .mapboxgl-popup-content {
-    background-color: #D2BAC7;
+    background-color: #fff;
+    color: black;
     opacity: 0;
     animation: 1s opacite 0s linear forwards;
   .mapboxgl-popup-tip {
-    background-color: #D2BAC7;
+    background-color: #fff;
+    color: black;
   }
   .mapboxgl-popup-close-button {
   }
@@ -47,6 +52,7 @@
 
 .popuptext {
   p {
+    color: black;
     margin: 0px;
     padding: 0px;
   }
