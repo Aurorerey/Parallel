@@ -24,47 +24,41 @@ Activity.create!(name:"Naturopathie", description: "blabla")
 Activity.create!(name:"Magnétisme", description: "blabla")
 Activity.create!(name:"Sophrologie", description: "blabla")
 
-User.create!(nom:"Irlande", prenom:"Chloé", email:"chloeirlande@gmail.com", email_confirmation:"chloeirlande@gmail.com",
-password:"chloechloe",city: "Marseille", adresse: "32 rue de la morue", code_postal: 13003, telephone: 0111223344)
+User.create!(nom:"Lopez", prenom:"Laura", email:"lauralopez@gmail.com", email_confirmation:"lauralopez@gmail.com",
+password:"lauralaura",city: "Marseille", adresse: "78 cours Franklin Roosevelt", code_postal: 13001, telephone: 0111223344)
 
 User.create!(nom:"rey", prenom:"Aurore", email:"aurorerey@gmail.com", email_confirmation:"aurorerey@gmail.com",
-password:"chloechloe",city: "Marseille", adresse: "32 rue de la morue", code_postal: 13003, telephone: 0111223344)
+password:"chloechloe",city: "Marseille", adresse: "48 rue Beauvau", code_postal: 13003, telephone: 0111223344)
 
 User.create!(nom:"blanc", prenom:"Joséphine", email:"joséphinedujardin@gmail.com", email_confirmation:"joséphinedujardin@gmail.com",
-password:"chloechloe",city: "Marseille", adresse: "32 rue de la morue", code_postal: 13003, telephone: 0111223344)
+password:"chloechloe",city: "Marseille", adresse: "93 boulevard de la Liberation", code_postal: 13003, telephone: 0111223344)
 
 User.create!(nom:"noir", prenom:"Chloe", email:"chloerey@gmail.com", email_confirmation:"chloerey@gmail.com",
-password:"chloechloe",city: "Marseille", adresse: "32 rue de la morue", code_postal: 13003, telephone: 0111223344)
+password:"chloechloe",city: "Marseille", adresse: "4 Boulevard Carbonel", code_postal: 13003, telephone: 0111223344)
 
-User.create!(nom:"Dumont", prenom:"Annarita", email:"annarita@gmail.com", email_confirmation:"annarita@gmail.com",
-password:"chloechloe",city: "Marseille", adresse: "32 rue de la morue", code_postal: 13003, telephone: 0111223344)
+User.create!(nom:"Dumont", prenom:"Anna", email:"anna@gmail.com", email_confirmation:"anna@gmail.com",
+password:"chloechloe",city: "Marseille", adresse: "16 avenue védrines", code_postal: 13003, telephone: 0111223344)
 
-User.create!(nom:"Jean", prenom:"Richard", email:"richardjean@gmail.com", email_confirmation:"richardjean@gmail.com",
-password:"chloechloe",city: "Marseille", adresse: "32 rue de la morue", code_postal: 13003, telephone: 0111223344)
+User.create!(nom:"Hernandez", prenom:"Lola", email:"richardjean@gmail.com", email_confirmation:"richardjean@gmail.com",
+password:"chloechloe",city: "Marseille", adresse: "16 avenue védrines", code_postal: 13003, telephone: 0111223344)
 
 User.create!(nom:"Ola", prenom:"Miguel", email:"miguel@gmail.com", email_confirmation:"miguel@gmail.com",
-password:"chloechloe",city: "Marseille", adresse: "32 rue de la morue", code_postal: 13003, telephone: 0111223344)
+password:"chloechloe",city: "Marseille", adresse: "16 avenue védrines", code_postal: 13003, telephone: 0111223344)
 
 User.create!(nom:"Cadenaule", prenom:"Bruno", email:"bruno@gmail.com", email_confirmation:"bruno@gmail.com",
-password:"chloechloe",city: "Marseille", adresse: "32 rue de la morue", code_postal: 13003, telephone: 0111223344)
+password:"chloechloe",city: "Marseille", adresse: "16 avenue védrines", code_postal: 13003, telephone: 0111223344)
 
 User.create!(nom:"Irlande", prenom:"Chloé", email:"chloeirlande1@gmail.com", email_confirmation:"chloeirlande1@gmail.com",
-password:"chloechloe",city: "Marseille", adresse: "32 rue de la morue", code_postal: 13003, telephone: 0111223344)
+password:"chloechloe",city: "Marseille", adresse: "16 avenue védrines", code_postal: 13003, telephone: 0111223344)
 
 User.create!(nom:"rey", prenom:"Aurore", email:"aurorerey1@gmail.com", email_confirmation:"aurorerey1@gmail.com",
-password:"chloechloe",city: "Marseille", adresse: "32 rue de la morue", code_postal: 13003, telephone: 0111223344)
+password:"chloechloe",city: "Marseille", adresse: "16 avenue védrines", code_postal: 13003, telephone: 0111223344)
 
 User.create!(nom:"blanc", prenom:"Joséphine", email:"joséphinedujardin1@gmail.com", email_confirmation:"joséphinedujardin1@gmail.com",
-password:"chloechloe",city: "Marseille", adresse: "32 rue de la morue", code_postal: 13003, telephone: 0111223344)
+password:"chloechloe",city: "Marseille", adresse: "16 avenue védrines", code_postal: 13003, telephone: 0111223344)
 
 User.create!(nom:"noir", prenom:"Chloe", email:"chloerey1@gmail.com", email_confirmation:"chloerey1@gmail.com",
-password:"chloechloe",city: "Marseille", adresse: "32 rue de la morue", code_postal: 13003, telephone: 0111223344)
-
-User.create!(nom:"Dumont", prenom:"Annarita", email:"annarita1@gmail.com", email_confirmation:"annarita1@gmail.com",
-password:"chloechloe",city: "Marseille", adresse: "32 rue de la morue", code_postal: 13003, telephone: 0111223344)
-
-User.create!(nom:"Jean", prenom:"Richard", email:"richardjean1@gmail.com", email_confirmation:"richardjean1@gmail.com",
-password:"chloechloe",city: "Marseille", adresse: "32 rue de la morue", code_postal: 13003, telephone: 0111223344)
+password:"chloechloe",city: "Marseille", adresse: "16 avenue védrines", code_postal: 13003, telephone: 0111223344)
 
 
 users = User.all
