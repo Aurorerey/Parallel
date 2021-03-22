@@ -11,11 +11,12 @@ require "open-uri"
 
 real_adress = ["99 Rue Edmond Rostand, Marseille", "10 Rue du Champ de Mars, Paris", "6 Rue des Jarlats, Massilly", "32 Rue Basse, Lille", "8 Rue de la République, Lyon", "25 rue Bernard, Marseille", "171 avenue du prado, Marseille", "11 boulevard Lyon, Marseille", "46 rue louis mazaudier, Marseille", "12 rue chape, Marseille"]
 
+Reservation.destroy_all
 Practice.destroy_all
 Cabinet.destroy_all
 User.destroy_all
 Activity.destroy_all
-Reservation.destroy_all
+
 
 Activity.create!(name:"Hypnose", description: "blabla")
 Activity.create!(name:"Radiesthesie", description: "blabla")
