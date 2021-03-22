@@ -3,5 +3,8 @@ class PagesController < ApplicationController
   end
 
   def profil
+    @user = current_user
+    @cabinets = Cabinet.all
+    @reservations = current_user.reservations
   end
 end

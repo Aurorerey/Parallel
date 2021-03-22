@@ -16,4 +16,5 @@ class User < ApplicationRecord
   # #validates :telephone, length: { is: 10 }
   # #validates :telephone, numericality: { only_integer: true }
   # validates :code_postal, numericality: { only_integer: true }
+  has_many :reservations
 end
