@@ -8,5 +8,5 @@ Rails.application.routes.draw do
   resources :cabinets do
     resources :reservations, only: [:new, :create, :destroy]
   end
-  get '/pro', to: 'pages#pro'
+  get '/profil', to: 'pages#profil', as: 'pro'
 end
