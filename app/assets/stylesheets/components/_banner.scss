@@ -53,6 +53,10 @@
     border-color: black;
     margin-right: 70px;
   }
+
+  a {
+    color: black;
+  }
 }
 
 .container-profil {
@@ -65,12 +69,17 @@
     font-family: 'Martel', serif;
     font-size: 20px;
     font-weight: bold;
+    text-align: center;
    }
 
    p h2 {
-    margin-top: 10px;
     margin-bottom: 10px;
     padding-right: 30px;
     padding-left: 30px;
+   }
+
+   a {
+     color: black;
+     padding-left: 10px;
    }
 }
