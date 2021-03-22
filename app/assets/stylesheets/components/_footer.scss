@@ -28,6 +28,13 @@
   opacity: 1;
 }
 
-.footer-copyright {
+.footer-copyright a {
   color: lightgrey;
+  opacity: 0.20;
+  text-decoration: none;
 }
+
+.footer-copyright a:hover {
+  text-decoration: none;
+}
+
