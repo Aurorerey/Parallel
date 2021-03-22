@@ -113,7 +113,7 @@
 }
 
 .btn-4 {
-  background-image: linear-gradient(to right, #fcb69f 0%, #c2e9fb 51%, #a1c4fd 100%);
+  background-image: linear-gradient(to right, #fcb69f 0%, #c2e9fb 51%, #ffecd2 100%);
 }
 
 .btn-5 {
@@ -121,28 +121,13 @@
 }
 
 /* Magic Stuff End -> */
-
-.calendarbutton {
-  width: 100%;
-  color: #fff;
-  background-color: #666;
-  transition: all 1s ease-out;
-}
-
-.calendarbutton:hover,
-.calendarbutton:focus {
-  color: #333;
-  background-color: #fff;
-}
-
-.calendarbutton2 {
-  width: 100%;
-  pointer-events: none;
-  background-color: #A46658;
-  border-radius: 0px;
-  border: 0px;
-}
-
-.bookedbutton {
-  background-color: red;
+.textdecoration {
+  text-decoration: none;
+  border: none;
+  color: black;
+  z-index: 1;
+  &:hover {
+    text-decoration:none;
+    color: black;
+  }
 }

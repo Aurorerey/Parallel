@@ -19,6 +19,7 @@
 <!-- WARNING WARNING WARNING DON'T TOUCH THE CODE-->
 <!-- Sous ce commentaire se trouve l'ensemble du code calendrier avec le pop up confirmation (copier le code avec les commentaires) -->
 
+<<<<<<< HEAD
     <div class="calendar-display">
       <%= calendar(number_of_days: 7) do |date| %>
         <%= date %>
@@ -52,6 +53,41 @@
                     <% end %>
                   </div>
                 </div>
+=======
+<div>
+  <%= calendar(number_of_days: 5) do |date| %>
+    <%= date %>
+    <% hour = 8 %>
+    <% 10.times do %>
+    <% if date.wday == 0 || date.wday == 6 %>
+      <button type="button" class="calendarbutton3"></button>
+    <% elsif Reservation.where(start_time: date + hour.hours).exists? %>
+        <button type="button" class="calendarbutton2"><p>Réservé</p></button>
+        <% else %>
+        <button type="button" class="calendarbutton" data-toggle="modal" data-target="#exampleModal-<%= date %>-<%= hour %>"><p><%= hour %>h - <%= hour + 1 %>h</p></button>
+        <% end %>
+        <div class="modal fade" id="exampleModal-<%= date %>-<%= hour %>" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Confirmation de Rendez-vous</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                <p>Rendez-vous le <%= date %> à <%= hour %>h</p>
+                <p>Au Cabinet <%= @cabinet.name %></p>
+                <p>Adresse : <%= @cabinet.adresse_cabinet %> <%= @cabinet.cp_cabinet %></p>
+                <p>Telephone : <%= @cabinet.telephone %></p>
+              </div>
+              <div class="modal-footer">
+                <%= simple_form_for [ @cabinet, @reservation ] do |f| %>
+                  <%= f.input :start_time, as: :hidden, input_html: { value: date.to_datetime + hour.hours }%>
+                  <%= f.input :end_time, as: :hidden, input_html: { value: date.to_datetime + (hour + 1).hours } %>
+                  <%= f.submit 'Confirmer', class: "btnSubmit" %>
+                <% end %>
+>>>>>>> 9c871c628c5d49efa9c6f6fa5f525456e8d46120
               </div>
             </div>
           <% hour += 1 %>

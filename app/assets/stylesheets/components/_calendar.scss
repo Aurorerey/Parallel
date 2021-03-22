@@ -1,9 +1,200 @@
 .calendcontainer {
-    width: 70%; /* On a indiqué une largeur (obligatoire) */ /* On peut donc demander à ce que le bloc soit centré avec auto */
+    width: 50%; /* On a indiqué une largeur (obligatoire) */ /* On peut donc demander à ce que le bloc soit centré avec auto */
     text-align: justify;
     padding-left: 50px;
 }
 
+<<<<<<< HEAD
 .calendar-display {
 
+=======
+.simple-calendar {
+  .day {
+    background-color: white;
+  }
+
+  .wday-0 {
+    background-color: white;
+  }
+  .wday-1 {
+    background-color: white;
+  }
+  .wday-2 {}
+  .wday-3 {}
+  .wday-4 {}
+  .wday-5 {}
+  .wday-6 {}
+
+  .today {
+    background-color: #ffecd2;
+  }
+  .past {}
+  .future {}
+
+  .start-date {
+    background-color: #ffecd2;
+  }
+
+  .prev-month {}
+  .next-month { }
+  .current-month {}
+
+  .has-events {}
+  .table th {
+    background-color: white;
+  }
+}
+
+.btn-15-date {
+  background: #fff;
+  pointer-events: none;
+  border: none;
+  z-index: 1;
+  text-decoration: none;
+  &:hover {
+    text-decoration:none;
+  }
+}
+
+.btn-15 {
+  background: #fff;
+  border: none;
+  z-index: 1;
+  text-decoration: none;
+  &:hover {
+    text-decoration:none;
+  }
+}
+.btn-15:after {
+  position: absolute;
+  content: "";
+  width: 0;
+  height: 100%;
+  top: 0;
+  right: 0;
+  z-index: -1;
+  background-color: #ffecd2;
+  border-radius: 5px;
+   box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5),
+   7px 7px 20px 0px rgba(0,0,0,.1),
+   4px 4px 5px 0px rgba(0,0,0,.1);
+  transition: all 0.3s ease;
+}
+.btn-15:hover {
+  color: #000;
+}
+.btn-15:hover:after {
+  left: 0;
+  width: 100%;
+}
+.btn-15:active {
+  top: 2px;
+}
+
+.calendarbutton {
+  width: 100%;
+  color: #000;
+  background-color: #fff;
+  transition: all 1s ease-out;
+}
+
+.calendarbutton:after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  top: 0;
+  right: 0;
+  z-index: -1;
+  background-color: #ffecd2;
+  border-radius: 5px;
+   box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5),
+   7px 7px 20px 0px rgba(0,0,0,.1),
+   4px 4px 5px 0px rgba(0,0,0,.1);
+  transition: all 0.3s ease;
+}
+.calendarbutton:hover {
+  color: #000;
+  background-color: #ffecd2;
+}
+.calendarbutton:hover:after {
+  left: 0;
+  width: 100%;
+}
+.calendarbutton:active {
+  top: 2px;
+}
+
+// .calendarbutton:hover,
+// .calendarbutton:focus {
+//   color: #fff;
+//   background-color: #fcb69f;
+// }
+
+.calendarbutton2 {
+  width: 100%;
+  pointer-events: none;
+  color: #000;
+  background-color: #C1C1C1;
+  transition: all 1s ease-out;
+}
+
+.calendarbutton2:after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  top: 0;
+  right: 0;
+  z-index: -1;
+  background-color: #ffecd2;
+  border-radius: 5px;
+   box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5),
+   7px 7px 20px 0px rgba(0,0,0,.1),
+   4px 4px 5px 0px rgba(0,0,0,.1);
+  transition: all 0.3s ease;
+}
+.calendarbutton2:hover {
+  color: #000;
+  background-color: #ffecd2;
+}
+.calendarbutton2:hover:after {
+  left: 0;
+  width: 100%;
+}
+.calendarbutton2:active {
+  top: 2px;
+}
+
+.calendarbutton3 {
+  width: 100%;
+  pointer-events: none;
+  color: #000;
+  background-color: #999;
+  transition: all 1s ease-out;
+}
+
+.calendarbutton3:after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  top: 0;
+  right: 0;
+  z-index: -1;
+  background-color: #ffecd2;
+  border-radius: 5px;
+   box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5),
+   7px 7px 20px 0px rgba(0,0,0,.1),
+   4px 4px 5px 0px rgba(0,0,0,.1);
+  transition: all 0.3s ease;
+}
+.calendarbutton3:hover {
+  color: #000;
+  background-color: #ffecd2;
+}
+.calendarbutton3:hover:after {
+  left: 0;
+  width: 100%;
+}
+.calendarbutton3:active {
+  top: 2px;
+>>>>>>> 9c871c628c5d49efa9c6f6fa5f525456e8d46120
 }
