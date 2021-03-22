@@ -146,7 +146,7 @@ Practice.create!(cabinet_id: Cabinet.last.id, activity_id: Activity.all.sample.i
 
 
 file7 = URI.open('https://res.cloudinary.com/cloudpandora/image/upload/v1615975012/Photos%20Pros/prof5.png')
-cabinet8 = Cabinet.create!(name: "Amandine", description: "Hypnose", user_id: users.sample.id,
+cabinet8 = Cabinet.create!(name: "Amande Douce", description: "Hypnose", user_id: users.sample.id,
 email: "jeanmeditation@gmail.com", cp_cabinet: 13008, adresse_cabinet: "11 boulevard Lyon, Marseille")
 cabinet8.photo.attach(io: file7, filename: 'prof4', content_type: 'image/png')
 
@@ -157,7 +157,7 @@ Practice.create!(cabinet_id: Cabinet.last.id, activity_id: Activity.all.sample.i
 
 
 file8 = URI.open('https://res.cloudinary.com/cloudpandora/image/upload/v1615975004/Photos%20Pros/prof7.png')
-cabinet9 = Cabinet.create!(name: "Ludivine", description: "Hypnose", user_id: users.sample.id,
+cabinet9 = Cabinet.create!(name: "L'Olivier", description: "Hypnose", user_id: users.sample.id,
 email: "jeanmeditation@gmail.com", cp_cabinet: 13008, adresse_cabinet: "10 Rue du Général de Gaulle, Guingamp")
 cabinet9.photo.attach(io: file8, filename: 'prof4', content_type: 'image/png')
 
@@ -168,7 +168,7 @@ Practice.create!(cabinet_id: Cabinet.last.id, activity_id: Activity.all.sample.i
 
 
 file9 = URI.open('https://res.cloudinary.com/cloudpandora/image/upload/v1615975004/Photos%20Pros/proh5.png')
-cabinet10 = Cabinet.create!(name: "Franck", description: "Hypnose", user_id: users.sample.id,
+cabinet10 = Cabinet.create!(name: "Le Chi", description: "Hypnose", user_id: users.sample.id,
 email: "jeanmeditation@gmail.com", cp_cabinet: 13008, adresse_cabinet: "3 Rue Guizot, Brest")
 cabinet10.photo.attach(io: file9, filename: 'prof4', content_type: 'image/png')
 
