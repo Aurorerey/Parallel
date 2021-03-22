@@ -18,14 +18,16 @@
 <!-- Sous ce commentaire se trouve l'ensemble du code calendrier avec le pop up confirmation (copier le code avec les commentaires) -->
 
 <div>
-  <%= calendar(number_of_days: 7) do |date| %>
+  <%= calendar(number_of_days: 5) do |date| %>
     <%= date %>
     <% hour = 8 %>
     <% 10.times do %>
-    <% if Reservation.where(start_time: date + hour.hours).exists? %>
-        <button type="button" class="btn calendarbutton2"><p>Réservé</p></button>
+    <% if date.wday == 0 || date.wday == 6 %>
+      <button type="button" class="calendarbutton3"></button>
+    <% elsif Reservation.where(start_time: date + hour.hours).exists? %>
+        <button type="button" class="calendarbutton2"><p>Réservé</p></button>
         <% else %>
-        <button type="button" class="btn btn-light calendarbutton" data-toggle="modal" data-target="#exampleModal-<%= date %>-<%= hour %>"><p><%= hour %>h - <%= hour + 1 %>h</p></button>
+        <button type="button" class="calendarbutton" data-toggle="modal" data-target="#exampleModal-<%= date %>-<%= hour %>"><p><%= hour %>h - <%= hour + 1 %>h</p></button>
         <% end %>
         <div class="modal fade" id="exampleModal-<%= date %>-<%= hour %>" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
           <div class="modal-dialog" role="document">
