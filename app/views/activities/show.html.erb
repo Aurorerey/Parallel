@@ -1,12 +1,42 @@
 <div class="container-show-activities">
   <%= render 'shared/searchbaractivities' %>
   <div class="show-banner-activities">
+
     <h1><%= @activity.name %></h1>
+    <% if @activity.name == "Hypnose" %>
     <p>« un état de conscience modifié »...<p>
     <hr />
-    <div class="show-text-activities">
-      <p><%= @activity.description %></p>
+    <% end %>
+
+     <% if @activity.name == "Naturopathie" %>
+    <p>La guérison par la nature<p>
+    <hr />
+    <% end %>
+
+    <div class="show-text-activities-hypnose">
+    <% if @activity.name == "Hypnose" %>
+      <p>L'hypnose permet de renforcer et d’amplifier les ressources présentes dans l’inconscient d’une personne afin de changer sa réalité. Sans hypnose, un sujet n’a accès qu’à ses pensées, ses habitudes et ses comportements conscients, qui sont restreints par des croyances appelées « limitantes ». En entrant dans le subconscient, ces aspects bloquants disparaissent, ce qui permet à l’esprit de développer et d’accéder sans limites à ses idées.
+
+Il existe de nombreuses définitions de l’hypnose et de formes de thérapies hypnotiques. Celles-ci peuvent être longues ou très courtes, les suggestions peuvent être directes ou indirectes, etc.
+
+Les thérapies par l’hypnose sont particulièrement indiquées lors d’états dépressifs, de traumatismes, de phobies ou d’addictions. Certains hôpitaux se servent également de l’hypnose en chirurgie, pour remplacer l’anesthésiant.
+
+Il faut cependant prêter attention à une méprise courante : les réactions à l’hypnose diffèrent selon les personnes. Certaines vont être très réceptives, d’autres moins. Si deux personnes ayant le même traumatisme sont traitées de la même façon, la thérapie peut très bien fonctionner sur l’une et ne pas avoir l’effet attendu sur l’autre. Il est donc nécessaire de faire le bon choix parmi les différents types d’hypnose.</p>
     </div>
+    <% end %>
+
+    <div class="show-text-activities-naturopathie">
+    <% if @activity.name == "Naturopathie" %>
+      <p>La nature possède son propre pouvoir de guérison. Ainsi, le thérapeute s’appuie sur le pouvoir d’auto-guérison du corps humain pour apporter un mieux-être : l’organisme est en possession d’une force vitale qui lui permet de se d'aller mieux spontanément.Toute la démarche s’inscrit dans une intention de ne pas nuire, résumée par la locution latine « primum non nocere ». Ce principe formulé par Hippocrate est toujours aussi respecté par la médecine conventionnelle.
+
+Enfin, le naturopathe est aussi un pédagogue. Il inculque aux personnes qui le consultent les règles de fonctionnement et d’hygiène vitale propres à sa pratique.
+Selon l’Organisation Mondiale de la Santé, “la naturopathie est un ensemble de méthodes de soins visant à renforcer les défenses de l’organisme par des moyens considérés comme naturels et biologiques.” La naturothérapie a connu une forte progression ces derniers temps et ses procédés naturels vont rapidement s’imposer dans le domaine des médecines alternatives.
+
+
+
+Médecine holistique, son principe est que les maladies sont souvent déclenchées par une alimentation inadaptée, un stockage de toxines dans l'organisme, un déséquilibre de l'énergie vitale et des carences.</p>
+    </div>
+    <% end %>
     <%= link_to 'Back', activities_path %>
   </div>
 

@@ -9,7 +9,7 @@
 
 require "open-uri"
 
-real_adress = ["99 Rue Edmond Rostand, Marseille", "10 Rue du Champ de Mars, Paris", "6 Rue des Jarlats, Massilly", "32 Rue Basse, Lille", "8 Rue de la République, Lyon", "25 rue Bernard, Marseille", "171 avenue du prado, Marseille", "11 boulevard Lyon, Marseille", "46 boulevard louis mazaudier, Marseille", "12 rue chape, Marseille"]
+real_adress = ["99 Rue Edmond Rostand, Marseille", "10 Rue du Champ de Mars, Paris", "6 Rue des Jarlats, Massilly", "32 Rue Basse, Lille", "8 Rue de la République, Lyon", "25 rue Bernard, Marseille", "171 avenue du prado, Marseille", "11 boulevard Lyon, Marseille", "46 rue louis mazaudier, Marseille", "12 rue chape, Marseille"]
 
 Practice.destroy_all
 Cabinet.destroy_all
@@ -17,13 +17,7 @@ User.destroy_all
 Activity.destroy_all
 Reservation.destroy_all
 
-Activity.create!(name:"Hypnose", description: "L'hypnose permet de renforcer et d’amplifier les ressources présentes dans l’inconscient d’une personne afin de changer sa réalité. Sans hypnose, un sujet n’a accès qu’à ses pensées, ses habitudes et ses comportements conscients, qui sont restreints par des croyances appelées « limitantes ». En entrant dans le subconscient, ces aspects bloquants disparaissent, ce qui permet à l’esprit de développer et d’accéder sans limites à ses idées.
-
-Il existe de nombreuses définitions de l’hypnose et de formes de thérapies hypnotiques. Celles-ci peuvent être longues ou très courtes, les suggestions peuvent être directes ou indirectes, etc.
-
-Les thérapies par l’hypnose sont particulièrement indiquées lors d’états dépressifs, de traumatismes, de phobies ou d’addictions. Certains hôpitaux se servent également de l’hypnose en chirurgie, pour remplacer l’anesthésiant.
-
-Il faut cependant prêter attention à une méprise courante : les réactions à l’hypnose diffèrent selon les personnes. Certaines vont être très réceptives, d’autres moins. Si deux personnes ayant le même traumatisme sont traitées de la même façon, la thérapie peut très bien fonctionner sur l’une et ne pas avoir l’effet attendu sur l’autre. Il est donc nécessaire de faire le bon choix parmi les différents types d’hypnose.")
+Activity.create!(name:"Hypnose", description: "blabla")
 Activity.create!(name:"Radiesthesie", description: "blabla")
 Activity.create!(name:"Naturopathie", description: "blabla")
 Activity.create!(name:"Magnétisme", description: "blabla")
@@ -80,6 +74,9 @@ email: "jeanmeditation@gmail.com", cp_cabinet: 13008, adresse_cabinet: real_adre
 cabinet1.photo.attach(io: file, filename: 'prof4', content_type: 'image/png')
 
 Practice.create!(cabinet_id: Cabinet.last.id, activity_id: Activity.all.sample.id)
+Practice.create!(cabinet_id: Cabinet.last.id, activity_id: Activity.all.sample.id)
+Practice.create!(cabinet_id: Cabinet.last.id, activity_id: Activity.all.sample.id)
+Practice.create!(cabinet_id: Cabinet.last.id, activity_id: Activity.all.sample.id)
 
 
 file1 = URI.open('https://res.cloudinary.com/cloudpandora/image/upload/v1615975028/Photos%20Pros/prof3.png')
@@ -87,6 +84,9 @@ cabinet2 = Cabinet.create!(name: "Beatrice", description: "Hypnose", user_id: us
 email: "jeanmeditation@gmail.com", cp_cabinet: 13008, adresse_cabinet: real_adress.sample)
 cabinet2.photo.attach(io: file1, filename: 'prof4', content_type: 'image/png')
 
+Practice.create!(cabinet_id: Cabinet.last.id, activity_id: Activity.all.sample.id)
+Practice.create!(cabinet_id: Cabinet.last.id, activity_id: Activity.all.sample.id)
+Practice.create!(cabinet_id: Cabinet.last.id, activity_id: Activity.all.sample.id)
 Practice.create!(cabinet_id: Cabinet.last.id, activity_id: Activity.all.sample.id)
 
 
@@ -96,6 +96,9 @@ email: "jeanmeditation@gmail.com", cp_cabinet: 13008, adresse_cabinet: real_adre
 cabinet3.photo.attach(io: file2, filename: 'prof4', content_type: 'image/png')
 
 Practice.create!(cabinet_id: Cabinet.last.id, activity_id: Activity.all.sample.id)
+Practice.create!(cabinet_id: Cabinet.last.id, activity_id: Activity.all.sample.id)
+Practice.create!(cabinet_id: Cabinet.last.id, activity_id: Activity.all.sample.id)
+Practice.create!(cabinet_id: Cabinet.last.id, activity_id: Activity.all.sample.id)
 
 
 file3 = URI.open('https://res.cloudinary.com/cloudpandora/image/upload/v1615975235/Photos%20Pros/prof1.png')
@@ -103,6 +106,9 @@ cabinet4 = Cabinet.create!(name: "Carole", description: "Hypnose", user_id: user
 email: "jeanmeditation@gmail.com", cp_cabinet: 13008, adresse_cabinet: real_adress.sample)
 cabinet4.photo.attach(io: file3, filename: 'prof4', content_type: 'image/png')
 
+Practice.create!(cabinet_id: Cabinet.last.id, activity_id: Activity.all.sample.id)
+Practice.create!(cabinet_id: Cabinet.last.id, activity_id: Activity.all.sample.id)
+Practice.create!(cabinet_id: Cabinet.last.id, activity_id: Activity.all.sample.id)
 Practice.create!(cabinet_id: Cabinet.last.id, activity_id: Activity.all.sample.id)
 
 
@@ -112,6 +118,9 @@ email: "jeanmeditation@gmail.com", cp_cabinet: 13008, adresse_cabinet: real_adre
 cabinet5.photo.attach(io: file4, filename: 'prof4', content_type: 'image/png')
 
 Practice.create!(cabinet_id: Cabinet.last.id, activity_id: Activity.all.sample.id)
+Practice.create!(cabinet_id: Cabinet.last.id, activity_id: Activity.all.sample.id)
+Practice.create!(cabinet_id: Cabinet.last.id, activity_id: Activity.all.sample.id)
+Practice.create!(cabinet_id: Cabinet.last.id, activity_id: Activity.all.sample.id)
 
 
 file5 = URI.open('https://res.cloudinary.com/cloudpandora/image/upload/v1615975013/Photos%20Pros/proh4.png')
@@ -119,6 +128,9 @@ cabinet6 = Cabinet.create!(name: "Pascal", description: "Hypnose", user_id: user
 email: "jeanmeditation@gmail.com", cp_cabinet: 13008, adresse_cabinet: real_adress.sample)
 cabinet6.photo.attach(io: file5, filename: 'prof4', content_type: 'image/png')
 
+Practice.create!(cabinet_id: Cabinet.last.id, activity_id: Activity.all.sample.id)
+Practice.create!(cabinet_id: Cabinet.last.id, activity_id: Activity.all.sample.id)
+Practice.create!(cabinet_id: Cabinet.last.id, activity_id: Activity.all.sample.id)
 Practice.create!(cabinet_id: Cabinet.last.id, activity_id: Activity.all.sample.id)
 
 
@@ -128,6 +140,9 @@ email: "jeanmeditation@gmail.com", cp_cabinet: 13008, adresse_cabinet: real_adre
 cabinet7.photo.attach(io: file6, filename: 'prof4', content_type: 'image/png')
 
 Practice.create!(cabinet_id: Cabinet.last.id, activity_id: Activity.all.sample.id)
+Practice.create!(cabinet_id: Cabinet.last.id, activity_id: Activity.all.sample.id)
+Practice.create!(cabinet_id: Cabinet.last.id, activity_id: Activity.all.sample.id)
+Practice.create!(cabinet_id: Cabinet.last.id, activity_id: Activity.all.sample.id)
 
 
 file7 = URI.open('https://res.cloudinary.com/cloudpandora/image/upload/v1615975012/Photos%20Pros/prof5.png')
@@ -135,6 +150,9 @@ cabinet8 = Cabinet.create!(name: "Amandine", description: "Hypnose", user_id: us
 email: "jeanmeditation@gmail.com", cp_cabinet: 13008, adresse_cabinet: real_adress.sample)
 cabinet8.photo.attach(io: file7, filename: 'prof4', content_type: 'image/png')
 
+Practice.create!(cabinet_id: Cabinet.last.id, activity_id: Activity.all.sample.id)
+Practice.create!(cabinet_id: Cabinet.last.id, activity_id: Activity.all.sample.id)
+Practice.create!(cabinet_id: Cabinet.last.id, activity_id: Activity.all.sample.id)
 Practice.create!(cabinet_id: Cabinet.last.id, activity_id: Activity.all.sample.id)
 
 
@@ -144,6 +162,9 @@ email: "jeanmeditation@gmail.com", cp_cabinet: 13008, adresse_cabinet: real_adre
 cabinet9.photo.attach(io: file8, filename: 'prof4', content_type: 'image/png')
 
 Practice.create!(cabinet_id: Cabinet.last.id, activity_id: Activity.all.sample.id)
+Practice.create!(cabinet_id: Cabinet.last.id, activity_id: Activity.all.sample.id)
+Practice.create!(cabinet_id: Cabinet.last.id, activity_id: Activity.all.sample.id)
+Practice.create!(cabinet_id: Cabinet.last.id, activity_id: Activity.all.sample.id)
 
 
 file9 = URI.open('https://res.cloudinary.com/cloudpandora/image/upload/v1615975004/Photos%20Pros/proh5.png')
@@ -151,6 +172,9 @@ cabinet10 = Cabinet.create!(name: "Franck", description: "Hypnose", user_id: use
 email: "jeanmeditation@gmail.com", cp_cabinet: 13008, adresse_cabinet: real_adress.sample)
 cabinet10.photo.attach(io: file9, filename: 'prof4', content_type: 'image/png')
 
+Practice.create!(cabinet_id: Cabinet.last.id, activity_id: Activity.all.sample.id)
+Practice.create!(cabinet_id: Cabinet.last.id, activity_id: Activity.all.sample.id)
+Practice.create!(cabinet_id: Cabinet.last.id, activity_id: Activity.all.sample.id)
 Practice.create!(cabinet_id: Cabinet.last.id, activity_id: Activity.all.sample.id)
 
 
