@@ -4,16 +4,18 @@
     <div class="practicien-card-show">
       <div class="p-avatar">
         <%= cl_image_tag @cabinet.photo.key %>
+        <h1><%= @cabinet.name %></h1>
       </div>
       <div class="praticien_card_info">
-        <h1><%= @cabinet.name %></h1>
-        <h2><%= @cabinet.description %></h2>
-        <h3> Présentation </h3>
-        <p> Je suis hypnothérapeute </p>
+        <p> Hypnothérapeute </p>
+        <p> Infirmière en consultations médicales psychiatriques, je me consacre depuis 2010 à l'hypnothérapie, activité que j'exerce à Marseille
+       </p>
         <h3> Formation </h3>
-        <p> J'ai des diplômes d'hypnose
+        <p> 2011 - Praticienne certifiée en hypnose ericksonienne - Ecole de sophrologie Aix-Marseille<br>
+        Je suis actuellement formatrice dans mon propre centre.
+        </p>
         <h3> Expérience </h3>
-        <p> J'ai de l'expérience </p>
+        <p> Mon axe de travail est de vous suivre pour faire émerger un sens aux situations de crise ou événements majeurs de votre vie. Les troubles émotionnel et symptômes qui s'y associent sont souvent de résistances aux changements qui freinent votre évolution. </p>
       </div>
     </div>
     <!-- WARNING WARNING WARNING DON'T TOUCH THE CODE-->
@@ -63,8 +65,11 @@
 <!-- Fin du code du calendrier (copier le code avec les commentaires) -->
 <div class="card-contact-show">
   <div class="contact-info-show">
-    <p> contact </p>
-    <p> adresse </p>
+    <h3> Accès </h3>
+    <h><%= @cabinet.adresse_cabinet %></p>
+    <p><%= @cabinet.cp_cabinet %></p>
+    <h3> Contact </h3>
+    <p> tel: 04.67.89.01 </p>
   </div>
     <div class="map-show">
       <div id="map"
