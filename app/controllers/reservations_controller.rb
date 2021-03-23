@@ -24,7 +24,7 @@ class ReservationsController < ApplicationController
   def destroy
     @reservation = Reservation.find(params[:id])
     @reservation.destroy
-    redirect_to cabinet_path, notice: 'Cabinet was successfully destroyed.'
+    redirect_to pro_path, notice: 'Reservation was successfully destroyed.'
   end
 
   private
