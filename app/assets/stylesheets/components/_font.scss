@@ -1,11 +1,3 @@
-.info-activities p {
-    display: flex;
-    margin-left: 50px;
-    margin-top: 88px;
-    margin-right: 353px;
-    font-size: 20px;
-}
-
 .info-activities h3 {
   margin-left: 50px;
   font-size: 30px;
@@ -13,12 +5,23 @@
 
 .info-activities {
   padding-top: 40px;
+
+.info-activities p {
+  padding-left: 100px;
+  color: white;
+  font-size: 20px;
 }
 
-  .boutons-home {
-    h3 {
-      padding-right: 200px;
+.info-activities-2 {
+  padding-left: 170px;
+  color: white;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 20px;
+}
 
-      padding-top: 80px;
+.boutons-home {
+  h3 {
+  padding-right: 200px;
+  padding-top: 80px;
     }
   }
