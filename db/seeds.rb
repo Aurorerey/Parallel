@@ -135,7 +135,7 @@ Practice.create!(cabinet_id: Cabinet.last.id, activity_id: Activity.all.sample.i
 
 file8 = URI.open('https://res.cloudinary.com/cloudpandora/image/upload/v1615975004/Photos%20Pros/prof7.png')
 cabinet9 = Cabinet.create!(name: "L'Olivier", description: "Hypnose", user_id: users.sample.id,
-email: "jeanmeditation@gmail.com", cp_cabinet: 13008, adresse_cabinet: "10 Rue du Général de Gaulle, Guingamp")
+email: "jeanmeditation@gmail.com", cp_cabinet: 13008, adresse_cabinet: "43 Boulevard Baille, Marseille")
 cabinet9.photo.attach(io: file8, filename: 'prof4', content_type: 'image/png')
 
 Practice.create!(cabinet_id: Cabinet.last.id, activity_id: Activity.all.sample.id)

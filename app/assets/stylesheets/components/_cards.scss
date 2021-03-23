@@ -7,8 +7,8 @@
   height: 500px;
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-gap: 100px;
-  margin-top: 50px;
+  grid-gap: 50px;
+  margin-top: 30px;
   overflow: scroll;
 }
 
@@ -18,7 +18,7 @@
   width: 400px;
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  justify-content: flex-start;
   border-radius: 5px;
   box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
   transition: all 0.3s cubic-bezier(.25,.8,.25,1);
@@ -26,14 +26,15 @@
 
 .praticien-infos {
   h2 {
-    font-size: 25px;
+    font-size: 20px;
     color: #222831;
   }
   a {
     text-decoration: none;
+    font-size: 13px;
     color: #870CC1;
     border: 1px solid #870CC1;
-    padding: 8px 24px;
+    padding: 4px 14px;
     border-radius: 50px;
     font-weight: lighter;
     opacity: 0.6;
@@ -43,7 +44,7 @@
   }
   }
   p {
-    font-size: 15px;
+    font-size: 12px;
   }
 }
 .praticien-card:hover {
@@ -54,41 +55,47 @@
   width: 110px;
   height: 110px;
   border-radius: 50%;
+  border: rgba(135, 12, 193, 0.5) 0.85px solid;
+  margin: 0 20px;
 }
 
 
 
 .container-cabinet-show {
   display: flex;
-  flex-direction: row;
-  justify-content: center;
+  padding-top: 60px;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
 .card-show-cabinet {
-  height: 500px;
-  margin-top: 50px;
+  height: 100%;
+  padding-right: 10px;
+
 }
 
 .practicien-card-show {
-  background: transparent;
-  height: 461px;
-  width: 700px;
-  margin-left: 50px;
-  margin-top: 50px;
-  display: flex;
-  flex-direction: column;
+  background: white;
+  margin-bottom: 15px;
+  min-width: 40vw;
   border-radius: 5px;
   box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
-  transition: all 0.3s cubic-bezier(.25,.8,.25,1);
 }
 
-.praticien-card-top {
+.card-contact-show {
   display: flex;
-  justify-content: flex-start;
-  padding: 20px;
+  justify-content: center;
 }
+
+.contact-info-show {
+  background: white;
+  width: 20vw;
+
+
+}
+
 .praticien_card_info {
-  padding-left: 80px;
+  padding-left: 10px;
   h1 {
     font-size: 23px;
     font-weight: bolder;
