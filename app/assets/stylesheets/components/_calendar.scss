@@ -68,7 +68,7 @@
   top: 0;
   right: 0;
   z-index: -1;
-  background-color: #ffecd2;
+  background-color: #AED7C9;
   border-radius: 5px;
    box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5),
    7px 7px 20px 0px rgba(0,0,0,.1),
@@ -88,32 +88,25 @@
 
 .calendarbutton {
   width: 100%;
-  color: #000;
-  background-color: #fff;
-  transition: all 1s ease-out;
-  cursor: pointer;
+  position: relative;
+  background: #fff;
   border: none;
-  border-radius: 15px;
-  margin-bottom: 5px;
+  z-index: 1;
 }
-
 .calendarbutton:after {
+  position: absolute;
   content: "";
-  width: 100%;
+  width: 0;
   height: 100%;
   top: 0;
   right: 0;
   z-index: -1;
-  background-color: #ffecd2;
+  background-color: #AED7C9;
   border-radius: 5px;
-   box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5),
-   7px 7px 20px 0px rgba(0,0,0,.1),
-   4px 4px 5px 0px rgba(0,0,0,.1);
-  transition: all 0.3s ease;
+  transition: all 0.6s ease-in-out;
 }
 .calendarbutton:hover {
   color: #000;
-  background-color: #ffecd2;
 }
 .calendarbutton:hover:after {
   left: 0;
@@ -123,76 +116,11 @@
   top: 2px;
 }
 
-// .calendarbutton:hover,
-// .calendarbutton:focus {
-//   color: #fff;
-//   background-color: #fcb69f;
-// }
-
 .calendarbutton2 {
   width: 100%;
-  pointer-events: none;
   color: #000;
-  background-color: #C1C1C1;
+  background-color: #9999;
   transition: all 1s ease-out;
-}
-
-.calendarbutton2:after {
-  content: "";
-  width: 100%;
-  height: 100%;
-  top: 0;
-  right: 0;
-  z-index: -1;
-  background-color: #ffecd2;
-  border-radius: 5px;
-   box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5),
-   7px 7px 20px 0px rgba(0,0,0,.1),
-   4px 4px 5px 0px rgba(0,0,0,.1);
-  transition: all 0.3s ease;
-}
-.calendarbutton2:hover {
-  color: #000;
-  background-color: #ffecd2;
-}
-.calendarbutton2:hover:after {
-  left: 0;
-  width: 100%;
-}
-.calendarbutton2:active {
-  top: 2px;
-}
-
-.calendarbutton3 {
-  width: 100%;
-  pointer-events: none;
-  color: #000;
-  background-color: #999;
-  transition: all 1s ease-out;
-}
-
-.calendarbutton3:after {
-  content: "";
-  width: 100%;
-  height: 100%;
-  top: 0;
-  right: 0;
-  z-index: -1;
-  background-color: #ffecd2;
-  border-radius: 5px;
-   box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5),
-   7px 7px 20px 0px rgba(0,0,0,.1),
-   4px 4px 5px 0px rgba(0,0,0,.1);
-  transition: all 0.3s ease;
-}
-.calendarbutton3:hover {
-  color: #000;
-  background-color: #ffecd2;
-}
-.calendarbutton3:hover:after {
-  left: 0;
-  width: 100%;
-}
-.calendarbutton3:active {
-  top: 2px;
+  cursor: pointer;
+  border: none;
 }

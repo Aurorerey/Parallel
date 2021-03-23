@@ -12,7 +12,7 @@
       <p>Email : <%= reservation.cabinet.email %></p>
       <p>Adresse : <%= reservation.cabinet.adresse_cabinet %></p>
       <p>Rendez-vous : Le <%= reservation.start_time.day %>/<%= reservation.start_time.month %>/<%= reservation.start_time.year %> de <%= reservation.start_time.hour %>h à <%= reservation.end_time.hour %>h</p>
-      <p><i><a href="cabinet_reservation_path">Supprimer le rendez-vous</p></i></a>
+      <p><i><%= link_to "Suprimer le rendez-vous", cabinet_reservation_path(reservation.cabinet, reservation), method: :delete, data: { confirm: "Are you sure?"}%></p></i>
       </div>
       <% end %>
       <br>
