@@ -51,6 +51,10 @@
   box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
 }
 
+.p-avatar {
+  display: flex;
+}
+
 .p-avatar img {
   width: 110px;
   height: 110px;
@@ -77,7 +81,8 @@
 .practicien-card-show {
   background: white;
   margin-bottom: 15px;
-  min-width: 40vw;
+  min-width: 50vw;
+  max-width: 50vw;
   border-radius: 5px;
   box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
 }
@@ -85,13 +90,12 @@
 .card-contact-show {
   display: flex;
   justify-content: center;
+
 }
 
 .contact-info-show {
   background: white;
-  width: 20vw;
-
-
+  width: 25vw;
 }
 
 .praticien_card_info {
