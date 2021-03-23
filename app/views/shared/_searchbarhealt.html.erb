@@ -1,8 +1,10 @@
 <div class="search__container3">
+  <div class="search_top">
     <p class="searchtext3">
       Je trouve mon practicien
     </p>
-
+  </div>
+  <div class="search-form">
      <%= form_tag cabinets_path, method: :get, class: "search3" do %>
         <%= text_field_tag :query_activity,
             params[:query_activity],
@@ -16,4 +18,5 @@
          <i class="fa fa-search" ></i>
          <% end %>
       <% end %>
+  </div>
 </div>

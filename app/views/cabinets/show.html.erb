@@ -23,7 +23,9 @@
       <% hour = 8 %>
       <% 10.times do %>
         <% if date.wday == 0 || date.wday == 6 %>
-          <button type="button" class="calendarbutton3"></button>
+          <button type="button" class="calendarbutton"></button>
+        <% elsif hour == 12 || hour == 13 %>
+          <button type="button" class="btn"></button>
         <% elsif Reservation.where(start_time: date + hour.hours).exists? %>
           <button type="button" class="calendarbutton2"><p class="m-0">Réservé</p></button>
         <% else %>
@@ -57,7 +59,6 @@
         <% hour += 1 %>
       <% end %>
     <% end %>
-
 </div>
 <!-- Fin du code du calendrier (copier le code avec les commentaires) -->
 <div class="card-contact-show">
