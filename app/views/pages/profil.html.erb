@@ -12,6 +12,7 @@
       <p>Email : <%= reservation.cabinet.email %></p>
       <p>Adresse : <%= reservation.cabinet.adresse_cabinet %></p>
       <p>Rendez-vous : Le <%= reservation.start_time.day %>/<%= reservation.start_time.month %>/<%= reservation.start_time.year %> de <%= reservation.start_time.hour %>h à <%= reservation.end_time.hour %>h</p>
+      <p><i><a href="cabinet_reservation_path">Supprimer le rendez-vous</p></i></a>
       </div>
       <% end %>
       <br>
@@ -21,7 +22,7 @@
       <p>Téléphone : <%= @user.telephone %></p>
       <p>Email : <%= @user.email %></p>
       <p>Adresse : <%= @user.adresse %> <%= @user.city %> <%= @user.code_postal %></p>
-    </div> 
+    </div>
     <a><%= link_to 'Back', '/' %></a>
   </div>
  </div>
