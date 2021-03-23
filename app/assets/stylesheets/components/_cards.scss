@@ -63,25 +63,39 @@
 
 .container-cabinet-show {
   display: flex;
-  flex-direction: row;
-  justify-content: center;
+  padding-top: 60px;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
 .card-show-cabinet {
-  height: 500px;
-  margin-top: 50px;
+  height: 100%;
+  padding-right: 10px;
+
 }
 
 .practicien-card-show {
-  background: transparent;
-  height: 175px;
-  width: 400px;
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
+  background: white;
+  margin-bottom: 15px;
+  min-width: 40vw;
   border-radius: 5px;
   box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
-  transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+}
+
+.card-contact-show {
+  display: flex;
+  justify-content: center;
+}
+
+.contact-info-show {
+  background: white;
+  width: 20vw;
+
+
+}
+
+.praticien_card_info {
+  padding-left: 10px;
   h1 {
     font-size: 23px;
     font-weight: bolder;
