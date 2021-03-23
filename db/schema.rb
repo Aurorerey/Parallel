@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2021_03_19_130534) do
+ActiveRecord::Schema.define(version: 2021_03_22_165754) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -44,7 +44,6 @@ ActiveRecord::Schema.define(version: 2021_03_19_130534) do
   end
 
   create_table "cabinets", force: :cascade do |t|
-    t.integer "telephone"
     t.integer "cp_cabinet"
     t.string "adresse_cabinet"
     t.string "email"
@@ -56,6 +55,7 @@ ActiveRecord::Schema.define(version: 2021_03_19_130534) do
     t.text "description"
     t.float "latitude"
     t.float "longitude"
+    t.string "telephone"
     t.index ["user_id"], name: "index_cabinets_on_user_id"
   end
 
@@ -91,9 +91,9 @@ ActiveRecord::Schema.define(version: 2021_03_19_130534) do
     t.string "prenom"
     t.date "birthday"
     t.string "city"
-    t.integer "telephone"
     t.string "adresse"
     t.integer "code_postal"
+    t.string "telephone"
     t.index ["email"], name: "index_users_on_email", unique: true
     t.index ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true
   end

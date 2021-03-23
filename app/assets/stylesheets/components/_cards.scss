@@ -42,6 +42,9 @@
     opacity: 1;
   }
   }
+  p {
+    font-size: 15px;
+  }
 }
 .praticien-card:hover {
   box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
@@ -54,13 +57,17 @@
 }
 
 
+
 .container-cabinet-show {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-gap: 50px;
-  margin-top: 50px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
 }
 
+.card-show-cabinet {
+  height: 500px;
+  margin-top: 50px;
+}
 
 .practicien-card-show {
   background: transparent;
@@ -83,13 +90,15 @@
 .praticien_card_info {
   padding-left: 80px;
   h1 {
-    font-size: 18px;
+    font-size: 23px;
+    font-weight: bolder;
   }
-   h2 {
-    font-size: 15px;
+
+  h2 {
+    font-size: 23px;
   }
   h3 {
-    font-size: 12px;
+    font-size: 18px;
   }
 }
 
