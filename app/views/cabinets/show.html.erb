@@ -19,7 +19,6 @@
     <!-- WARNING WARNING WARNING DON'T TOUCH THE CODE-->
     <!-- Sous ce commentaire se trouve l'ensemble du code calendrier avec le pop up confirmation (copier le code avec les commentaires) -->
     <%= calendar(number_of_days: 5) do |date| %>
-      <%= date %>
       <% hour = 8 %>
       <% 10.times do %>
         <% if date.wday == 0 || date.wday == 6 %>
