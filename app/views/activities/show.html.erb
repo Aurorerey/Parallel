@@ -2,8 +2,6 @@
   <%= render 'shared/searchbaractivities' %>
   <div class="show-container-activities">
     <!-- app/views/offers/show.html.erb -->
-    <% content_for :meta_title, "#{@activity.name} is on #{DEFAULT_META["meta_product_name"]}" %>
-    <% content_for :meta_description, @activity.description %>
     <h1><%= @activity.name %></h1>
 
     <% if @activity.name == "Hypnose" %>
