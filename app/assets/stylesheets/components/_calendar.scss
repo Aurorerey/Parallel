@@ -5,6 +5,10 @@
 }
 
 .simple-calendar {
+
+  th, p {
+    height: 33px;
+  }
   .day {
     background-color: white;
   }
