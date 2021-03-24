@@ -5,7 +5,7 @@ class ActivitiesController < ApplicationController
   end
 
   def show
-    @body_class = 'activities'
+    @body_class = 'activities-show'
     @activity = Activity.find(params[:id])
   end
 end
