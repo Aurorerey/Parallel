@@ -3,73 +3,76 @@
 <head>
   <title>The page you were looking for doesn't exist (404)</title>
   <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta charset="utf-8">
   <style>
 
-  @import url('https://fonts.googleapis.com/css?family=Roboto+Mono:300,500');
-
-html, body {
-    width: 100%;
-    height: 100%;
-}
-
 body {
-    background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/257418/andy-holmes-698828-unsplash.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    min-height: 100vh;
-    min-width: 100vw;
-    font-family: "Roboto Mono", "Liberation Mono", Consolas, monospace;
-    color: rgba(255,255,255,.87);
+  background-color: #66B19A;
 }
 
-.mx-auto {
-    margin-left: auto;
-    margin-right: auto;
+.mainbox {
+  background-color: #66B19A;
+  margin: auto;
+  height: 600px;
+  width: 600px;
+  position: relative;
 }
 
-.container,
-.container > .row,
-.container > .row > div {
-    height: 100%;
+  .err {
+    color: #ffffff;
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 11rem;
+    position:absolute;
+    left: 20%;
+    top: 8%;
+  }
+
+.far {
+  position: absolute;
+  font-size: 8.5rem;
+  left: 42%;
+  top: 15%;
+  color: #ffffff;
 }
 
-#countUp {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 100%;
+ .err2 {
+    color: #ffffff;
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 11rem;
+    position:absolute;
+    left: 68%;
+    top: 8%;
+  }
 
-    .number {
-        font-size: 4rem;
-        font-weight: 500;
+.msg {
+    text-align: center;
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 1.6rem;
+    position:absolute;
+    left: 16%;
+    top: 45%;
+    width: 75%;
+  }
 
-        + .text {
-            margin: 0 0 1rem;
-        }
-    }
-
-    .text {
-        font-weight: 300;
-        text-align: center;
-    }
+a {
+  text-decoration: none;
+  color: white;
 }
-  </style>
+
+a:hover {
+  text-decoration: underline;
+}
+</style>
+
 </head>
-
-<body class="rails-default-error-page">
-  <!-- This file lives in public/404.html -->
-  <div class="container">
-    <div class="row">
-        <div class="xs-12 md-6 mx-auto">
-            <div id="countUp">
-                <div class="number" data-count="404">404</div>
-                <div class="text">Page not found</div>
-                <div class="text">This may not mean anything.</div>
-                <div class="text">I'm probably working on something that has blown up.</div>
-            </div>
-        </div>
-    </div>
-</div>
-</body>
+<link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@600;900&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/4b9ba14b0f.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <div class="mainbox">
+    <div class="err">4</div>
+    <i class="far fa-question-circle fa-spin"></i>
+    <div class="err2">4</div>
+    <div class="msg">Cette page a été déplacé? Supprimé? Se cache en quarantaine? <br> N'a jamais existé?<p> Retournes sur la page <a href="/">d'accueil</a>.</p></div>
+  </div>
 </html>
