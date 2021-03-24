@@ -67,7 +67,7 @@
     width: 110px;
     height: 110px;
     border-radius: 50%;
-    border: solid #858585;
+    border: solid #9b56b6;;
     border-width: thin;
     margin-left: 20px;
   }
@@ -98,8 +98,7 @@
 
 .practicien-card-show {
   padding-left: 20px;
-  padding-top: 20px;
-  padding-bottom: 5px;
+  padding-top: 25px;
   background: white;
   margin-bottom: 15px;
   min-width: 50vw;
@@ -109,20 +108,26 @@
   p {
     padding-right: 40px;
     text-align: justify;
+    font-size: 14px;
   }
 
   h3 {
     font-weight: bolder;
+    color: #9b56b6;
   }
   h1 {
-    padding-bottom: 5px;
+    padding-bottom: 20px;
+    font-size: 30px;
   }
 }
 
 .card-contact-show {
   display: flex;
   justify-content: center;
-
+  h3 {
+    color: #9b56b6;
+    padding-top: 5px;
+  }
 }
 
 .contact-info-show {
@@ -185,4 +190,8 @@
   padding-top: 30px;
   border-radius: 5px;
   box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+
+.card-contact-show h3 {
+  font-size: 18px;
 }
