@@ -31,3 +31,40 @@
 
 en:
   hello: "Hello world"
+  date:
+    abbr_day_names:
+    - Dim
+    - Lun
+    - Mar
+    - Mer
+    - Jeu
+    - Ven
+    - Sam
+    abbr_month_names:
+    -
+    - Jan.
+    - Fév.
+    - Mar.
+    - Avr.
+    - Mai
+    - Juin
+    - Juil.
+    - Août
+    - Sept.
+    - Oct.
+    - Nov.
+    - Déc.
+    month_names:
+    -
+    - Janvier
+    - Février
+    - Mars
+    - Avril
+    - Mai
+    - Juin
+    - Juillet
+    - Août
+    - Septembre
+    - Octobre
+    - Novembre
+    - Décembre
