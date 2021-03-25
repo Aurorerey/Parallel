@@ -66,7 +66,7 @@ users = User.all
 
 file = URI.open('https://res.cloudinary.com/cloudpandora/image/upload/v1615975021/Photos%20Pros/prof4.png')
 cabinet1 = Cabinet.create!(name: "Emmeline Astier", description: "Hypnose", user_id: users.sample.id,
-email: "astierhypnose@gmail.com", cp_cabinet: 13008, adresse_cabinet: "99 Rue Edmond Rostand, Marseille")
+email: "astierhypnose@gmail.com", cp_cabinet: 13006, adresse_cabinet: "99 Rue Edmond Rostand, Marseille")
 cabinet1.photo.attach(io: file, filename: 'prof4', content_type: 'image/png')
 
 Practice.create!(cabinet_id: Cabinet.last.id, activity_id: Activity.where(name: "Hypnose").first.id)
