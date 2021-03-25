@@ -31,9 +31,9 @@
   .past {}
   .future {}
 
-  .start-date {
-    background-color: #ffecd2;
-  }
+  // .start-date {
+  //   background-color: #ffecd2;
+  // }
 
   .prev-month {}
   .next-month { }
@@ -128,4 +128,8 @@
   transition: all 1s ease-out;
   cursor: pointer;
   border: none;
+}
+
+.btn-group {
+  width: 100%;
 }
