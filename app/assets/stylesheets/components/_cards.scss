@@ -121,20 +121,13 @@
   }
 }
 
-.card-contact-show {
-  display: flex;
-  justify-content: center;
-  h3 {
-    color: #9b56b6;
-    padding-top: 5px;
-  }
-}
-
 .contact-info-show {
   background: white;
   width: 27vw;
   padding-left: 10px;
-  padding-top: 10px;
+  // padding-top: 10px;
+  border-radius: 5px 0 0 5px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
 }
 
 .praticien_card_info {
@@ -153,6 +146,8 @@
 }
 
 .card-contact-show {
+  display: flex;
+  justify-content: center;
   padding-left: 20px;
   padding-right: 10px;
   h3, p {
@@ -163,6 +158,8 @@
   h3 {
     font-size: 20px;
     font-weight: bolder;
+    color: #9b56b6;
+    padding-top: 5px;
   }
 
   p {
